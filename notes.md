@@ -52,7 +52,7 @@ ________________________________________________________________________________
     ssh -S /tmp/jump jump -O forward -D9050
 ________________________________________________________________________________________________________________
 ## Nmapping the IP's that responded to identify ports: 
-    proxychains nmap -T4 -Pn 192.168.28.100,111
+    proxychains nmap -T4 -Pn 192.168.28.97,98,99,100,105,111,120
 Nmap scan report for 192.168.28.97
 
 Host is up (0.00052s latency).
