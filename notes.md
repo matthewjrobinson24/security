@@ -77,7 +77,7 @@ ________________________________________________________________________________
 ## *Authenticate* with second target using previous tunnel: 
     ssh -MS /tmp/t2 creds@127.0.0.1 -p2323 
 ________________________________________________________________________________________________________________
-## Repeat steps from the first *Authenticate* to the second *Authenticate*.
+# Repeat steps from the first *Authenticate* to the second *Authenticate*.
 ________________________________________________________________________________________________________________
 
 
