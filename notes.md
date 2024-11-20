@@ -69,6 +69,8 @@ PORT   STATE SERVICE
 
 53/tcp open  domain
 
+---------------------------------------------------
+
 Nmap scan report for 192.168.28.99
 
 Host is up (0.00068s latency).
@@ -78,6 +80,8 @@ Not shown: 999 closed ports
 PORT   STATE SERVICE
 
 53/tcp open  domain
+
+---------------------------------------------------
 
 Nmap scan report for 192.168.28.100
 
@@ -90,6 +94,8 @@ PORT     STATE SERVICE
 80/tcp   open  http
 
 2222/tcp open  EtherNetIP-1
+
+---------------------------------------------------
 
 Nmap scan report for 192.168.28.105
 
@@ -105,6 +111,8 @@ PORT     STATE SERVICE
 
 2222/tcp open  EtherNetIP-1
 
+---------------------------------------------------
+
 Nmap scan report for 192.168.28.111
 
 Host is up (0.00060s latency).
@@ -118,6 +126,8 @@ PORT     STATE SERVICE
 2222/tcp open  EtherNetIP-1
 
 8080/tcp open  http-proxy
+
+---------------------------------------------------
 
 Nmap scan report for 192.168.28.120
 
