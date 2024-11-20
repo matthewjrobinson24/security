@@ -20,19 +20,19 @@ duckduckgo
 ________________________________________________________________________________________________________________
     https://sec.cybbh.io/public/security/latest/index.html
 ________________________________________________________________________________________________________________
-## Creating a master socket:
+## Creating our master socket to allow obfuscation:
     ssh -MS /tmp/jump student@10.50.25.229
 ________________________________________________________________________________________________________________
-## Ping sweeping the network: 
+## Ping sweeping the network to see what devices are up: 
     for i in {97..126}; do (ping -c 1 192.168.28.$i | grep "bytes from" &) ; done    
 ________________________________________________________________________________________________________________
-## Making our dynamic port forward: 
+## Making our dynamic port forward to utilize our tools: 
     ssh -S /tmp/jump jump -O forward -D9050
 ________________________________________________________________________________________________________________
-## 
+## Nmapping the IP's that responded to identify ports: 
     proxychains nmap 192.168.28.100,111
 ________________________________________________________________________________________________________________
-## 
+## Netcatting the ports to validate they are what they say they are:
     proxychains nc 192.168.28.100 80
 ________________________________________________________________________________________________________________
 ## 
