@@ -53,93 +53,58 @@ ________________________________________________________________________________
 ________________________________________________________________________________________________________________
 ## Nmapping the IP's that responded to identify ports: 
     proxychains nmap -T4 -Pn 192.168.28.97,98,99,100,105,111,120
+```
 Nmap scan report for 192.168.28.97
-
 Host is up (0.00052s latency).
-
 All 1000 scanned ports on 192.168.28.97 are closed
-
 Nmap scan report for 192.168.28.98
-
 Host is up (0.00064s latency).
-
 Not shown: 999 closed ports
 
 PORT   STATE SERVICE
-
 53/tcp open  domain
-
 ---------------------------------------------------
-
 Nmap scan report for 192.168.28.99
-
 Host is up (0.00068s latency).
-
 Not shown: 999 closed ports
 
 PORT   STATE SERVICE
-
 53/tcp open  domain
-
 ---------------------------------------------------
-
 Nmap scan report for 192.168.28.100
-
 Host is up (0.00073s latency).
-
 Not shown: 998 closed ports
 
 PORT     STATE SERVICE
-
 80/tcp   open  http
-
 2222/tcp open  EtherNetIP-1
-
 ---------------------------------------------------
-
 Nmap scan report for 192.168.28.105
-
 Host is up (0.00060s latency).
-
 Not shown: 997 closed ports
 
 PORT     STATE SERVICE
-
 21/tcp   open  ftp
-
 23/tcp   open  telnet
-
 2222/tcp open  EtherNetIP-1
-
 ---------------------------------------------------
-
 Nmap scan report for 192.168.28.111
-
 Host is up (0.00060s latency).
-
 Not shown: 997 closed ports
 
 PORT     STATE SERVICE
-
 80/tcp   open  http
-
 2222/tcp open  EtherNetIP-1
-
 8080/tcp open  http-proxy
-
 ---------------------------------------------------
-
 Nmap scan report for 192.168.28.120
-
 Host is up (0.00065s latency).
-
 Not shown: 999 closed ports
 
 PORT     STATE SERVICE
-
 4242/tcp open  vrml-multi-use
-
 Nmap done: 7 IP addresses (7 hosts up) scanned in 4.62 seconds
+```
 ________________________________________________________________________________________________________________
 ## Discovered ports above...    
 ________________________________________________________________________________________________________________
