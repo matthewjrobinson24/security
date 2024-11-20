@@ -141,7 +141,7 @@ PORT     STATE SERVICE
 
 Nmap done: 7 IP addresses (7 hosts up) scanned in 4.62 seconds
 ________________________________________________________________________________________________________________
-## Discovered ports 80 and 2222 on both devices...    
+## Discovered ports above...    
 ________________________________________________________________________________________________________________
 ## Netcat the ports found for those devices:
     proxychains nc 192.168.28.100 80
