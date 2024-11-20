@@ -20,7 +20,7 @@ duckduckgo
 ________________________________________________________________________________________________________________
     https://sec.cybbh.io/public/security/latest/index.html
 ________________________________________________________________________________________________________________
-## Creating our master socket to allow obfuscation:
+## Creating our master socket to allow tunneling:
     ssh -MS /tmp/jump student@10.50.25.229
 ________________________________________________________________________________________________________________
 ## Ping sweeping the network to see what devices are up: 
