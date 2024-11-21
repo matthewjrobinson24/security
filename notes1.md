@@ -102,8 +102,6 @@ PORT     STATE SERVICE
 Nmap done: 7 IP addresses (7 hosts up) scanned in 4.62 seconds
 ```
 ________________________________________________________________________________________________________________
-## Discovered ports above...    
-________________________________________________________________________________________________________________
 ## Netcat the ports found for those devices:
     proxychains nc 192.168.28.100 80
     proxychains nc 192.168.28.100 2222
