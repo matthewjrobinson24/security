@@ -1,8 +1,3 @@
-## Server-Side injection
-## Post method: 
-    ../../../../../../ect/hosts
-    ../../../../../../ect/passwd
-________________________________________________________________________________________________________________
 ## Malicious File Upload: 
     <HTML><BODY>
     <FORM METHOD="GET" NAME="myform" ACTION="">
