@@ -138,13 +138,13 @@ ________________________________________________________________________________
 ## Search for transluscent/opacity text on ANY of the tabs that match what you are looking for...
 ## Also worth looking at the class= field...
 ________________________________________________________________________________________________________________
-## *Authenticate* with first target: 
+## *Authenticate* with first target: (found in FTP from wget -r also to the .120 - YourTempPassword)
     ssh -MS /tmp/t1 creds@127.0.0.1 -p2222 (ssh/alt ssh port)
 ________________________________________________________________________________________________________________
 ## Ping sweep the new network: 
-    for i in {20..40}; do (ping -c 1 100.200.25.$i | grep "bytes from" &) ; done
+    for i in {225..254}; do (ping -c 1 192.168.28.$i | grep "bytes from" &) ; done
 ________________________________________________________________________________________________________________
-## Discovered IP's 100.200.25.30-35...
+## Discovered IP's 192.168.28.X...
 ________________________________________________________________________________________________________________
 ## Cancel the first dynamic port forward: 
     ssh -S /tmp/jump -O cancel -D9050
