@@ -101,11 +101,22 @@ Nmap done: 1 IP address (1 host up) scanned in 1.20 seconds
 
 ```
 ________________________________________________________________________________________________________________
-
-
+## The above scan shows directories worth taking a look at: (IN THE URL ON FIREFOX) 
+    http://127.0.0.1:10001/robots.txt
+    http://127.0.0.1:10001/css/
+    http://127.0.0.1:10001/images/
+    http://127.0.0.1:10001/uploads/
 ________________________________________________________________________________________________________________
+## In the /uploads/ clicking the link reveals the message: 
+    http://127.0.0.1:10001/uploads/message
+```
+Just completed my Cyber Awareness training and it says ATOPIA. Last I checked that is a whole other country.
+Please send me a corrected cert with the right now.
 
+I took my online training from the following website
 
+10.100.28.55
+```
 ________________________________________________________________________________________________________________
 
 
