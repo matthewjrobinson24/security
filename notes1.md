@@ -193,16 +193,27 @@ Nmap done: 5 IP addresses (5 hosts up) scanned in 4.52 seconds
 ```   
 ________________________________________________________________________________________________________________
 ## Netcat the ports found for those devices: 
-    proxychains nc 100.200.25.30 80
+    proxychains nc 192.168.150.226 53
+    proxychains nc 192.168.150.227 53
+    proxychains nc 192.168.150.245 135
+    proxychains nc 192.168.150.245 139
+    proxychains nc 192.168.150.245 3389
+    proxychains nc 192.168.150.245 9999
+    proxychains nc 192.168.150.253 80
+    proxychains nc 192.168.150.253 514
 ________________________________________________________________________________________________________________
 ## New port forward to these devices:
-    ssh -S /tmp/t1 t1 -O forward -L2424:100.200.25.30:2222 -L3535:100.200.25.30:80
+    ssh -S /tmp/t1 t1 -O forward -L30001
+```
+-L30001:192.168.150.245:
+-L30002:192.168.150.253:80 
+```
 ________________________________________________________________________________________________________________
 ## Open firefox and enter the loopback and port tied to the port forwards above:
-    http://127.0.0.1:3333
+    http://127.0.0.1:30001
 ________________________________________________________________________________________________________________
 ## *Authenticate* with second target using previous tunnel: 
-    ssh -MS /tmp/t2 creds@127.0.0.1 -p2323 
+    ssh -MS /tmp/t2 creds@127.0.0.1 -pALTSSH 
 ________________________________________________________________________________________________________________
 # Repeat steps (as needed) from the first *Authenticate* to the second *Authenticate*.
 ________________________________________________________________________________________________________________
