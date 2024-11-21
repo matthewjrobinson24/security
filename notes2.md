@@ -21,14 +21,6 @@ ________________________________________________________________________________
 ### 2: access to upload
 ### 3: call to upload
 ________________________________________________________________________________________________________________
-## Uploading SSH Key: 
-    ; ls -la /users/home/directory                           #check if .ssh exists
-    ; mkdir /users/home/directory/.ssh                       #make .ssh in users home folder if it does not exist
-    ssh-keygen -t rsa -b 4096                                #creating ssh private and public keys
-    cat ~/.ssh/id_rsa.pub                                    #copying public key to paste into below command
-    ; echo "your_public_key_here" >> /users/home/directory/.ssh/authorized_keys    #placing ssh key in directory
-    ; cat /users/home/directory/.ssh/authorized_keys         #verifying the ssh key was emplaced
-________________________________________________________________________________________________________________
 # Scheme of Maneuver:
 # >Jump Box
 # ->T1:10.100.28.40
