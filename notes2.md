@@ -34,11 +34,19 @@ ________________________________________________________________________________
     ; echo "your_public_key_here" >> /users/home/directory/.ssh/authorized_keys    #placing ssh key in directory
     ; cat /users/home/directory/.ssh/authorized_keys         #verifying the ssh key was emplaced
 ________________________________________________________________________________________________________________
-
-
-________________________________________________________________________________________________________________
-
-
+# Scheme of Maneuver:
+# >Jump Box
+# ->T1:10.100.28.40
+## Target Section:
+## T1
+## Hostname: Donovian_MI_websvr
+## IP: 10.100.28.40
+## OS: unknown
+## Creds:unknown
+## Last Known SSH Port: unknown
+## PSP: Unknown
+## Malware: Unknown
+## Action: Conduct approved Web Exploitation techniques to collect intellegence.
 ________________________________________________________________________________________________________________
 
 
