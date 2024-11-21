@@ -203,13 +203,9 @@ ________________________________________________________________________________
     proxychains nc 192.168.150.253 514
 ________________________________________________________________________________________________________________
 ## New port forward to these devices:
-    ssh -S /tmp/t1 t1 -O forward -L30001
-```
--L30001:192.168.150.245:
--L30002:192.168.150.253:80 
-```
+    ssh -S /tmp/t1 t1 -O forward -L30001:IP:SSH/HTTP -L30002:IP:SSH/HTTP -L30003:IP:SSH/HTTP
 ________________________________________________________________________________________________________________
-## Open firefox and enter the loopback and port tied to the port forwards above:
+## Open firefox and enter the loopback and port tied to the port forwards above for http:
     http://127.0.0.1:30001
 ________________________________________________________________________________________________________________
 ## *Authenticate* with second target using previous tunnel: 
