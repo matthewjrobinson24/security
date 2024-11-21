@@ -79,6 +79,10 @@ ________________________________________________________________________________
     firefox http://127.0.0.1:10001
 ________________________________________________________________________________________________________________
 ## Next utilize scripts to gather more info: 
+    ls /usr/share/nmap/scripts/ | grep http
+```
+http-enum.nse
+```
     proxychains nmap -T4 -Pn 10.100.28.40 --script=http-enum.nse
 ```
 Nmap scan report for 10.100.28.40
