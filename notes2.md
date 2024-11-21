@@ -24,16 +24,16 @@ ________________________________________________________________________________
 ## Scheme of Maneuver:
 ## >Jump Box
 ## ->T1:10.100.28.40
-### Target Section:
-### T1
-### Hostname: Donovian_MI_websvr
-### IP: 10.100.28.40
-### OS: unknown
-### Creds:unknown
-### Last Known SSH Port: unknown
-### PSP: Unknown
-### Malware: Unknown
-### Action: Conduct approved Web Exploitation techniques to collect intellegence.
+#### Target Section:
+#### T1
+#### Hostname: Donovian_MI_websvr
+#### IP: 10.100.28.40
+#### OS: unknown
+#### Creds:unknown
+#### Last Known SSH Port: unknown
+#### PSP: Unknown
+#### Malware: Unknown
+#### Action: Conduct approved Web Exploitation techniques to collect intellegence.
 ________________________________________________________________________________________________________________
 ## SSH to your tunnel: 
     ssh -MS /tmp/jump student@10.50.25.229
