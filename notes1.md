@@ -136,6 +136,7 @@ ________________________________________________________________________________
     firefox http://127.0.0.1:20008
 ________________________________________________________________________________________________________________
 ## Search for transluscent/opacity text on ANY of the tabs that match what you are looking for...
+## Also worth looking at the class= field...
 ________________________________________________________________________________________________________________
 ## *Authenticate* with first target: 
     ssh -MS /tmp/t1 creds@127.0.0.1 -p2222 (ssh/alt ssh port)
