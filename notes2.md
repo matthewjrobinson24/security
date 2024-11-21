@@ -133,7 +133,7 @@ ________________________________________________________________________________
     ssh-keygen -t rsa -b 4096                                #creating ssh private and public keys
     cat ~/.ssh/id_rsa.pub                                    #copying public key to paste into below command
     ; echo "your public ssh key here" >> /home/billybob/.ssh/authorized_keys    #placing ssh key in directory
-    ; cat /home/billybob/.ssh/authorized_keys         #verifying the ssh key was emplaced
+    ; cat /home/billybob/.ssh/authorized_keys                #verifying the ssh key was emplaced
 
 ________________________________________________________________________________________________________________
 
