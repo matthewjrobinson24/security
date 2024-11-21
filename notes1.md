@@ -158,9 +158,39 @@ ________________________________________________________________________________
     ssh -S /tmp/t1 t1 -O forward -D9050
 ________________________________________________________________________________________________________________
 ## Scan the IP's you found: 
-    proxychains nmap -T4 -Pn 100.200.25.30,35
-________________________________________________________________________________________________________________
-## Discovered ports 80 and 2222 on both devices...
+    proxychains nmap -T4 -Pn 192.168.150.225,226,227,245,253
+```
+Nmap scan report for 192.168.150.226
+Host is up (0.00096s latency).
+Not shown: 999 closed ports
+PORT   STATE SERVICE
+53/tcp open  domain
+
+Nmap scan report for 192.168.150.227
+Host is up (0.00096s latency).
+Not shown: 999 closed ports
+PORT   STATE SERVICE
+53/tcp open  domain
+
+Nmap scan report for 192.168.150.245
+Host is up (0.0010s latency).
+Not shown: 995 closed ports
+PORT     STATE SERVICE
+135/tcp  open  msrpc
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+3389/tcp open  ms-wbt-server
+9999/tcp open  abyss
+
+Nmap scan report for 192.168.150.253
+Host is up (0.00092s latency).
+Not shown: 998 closed ports
+PORT    STATE SERVICE
+80/tcp  open  http
+514/tcp open  shell
+
+Nmap done: 5 IP addresses (5 hosts up) scanned in 4.52 seconds
+```   
 ________________________________________________________________________________________________________________
 ## Netcat the ports found for those devices: 
     proxychains nc 100.200.25.30 80
