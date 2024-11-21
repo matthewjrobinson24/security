@@ -78,7 +78,7 @@ ________________________________________________________________________________
 ## Run firefox to access the http port discovered through the tunnel: 
     firefox http://127.0.0.1:10001
 ________________________________________________________________________________________________________________
-## Next utilize scripts to gather more info: 
+## Next utilize scripts to gather more info: (use one pane for viewing the scripts, previous pane for scanning.)
     ls /usr/share/nmap/scripts/ | grep http
 ```
 http-enum.nse
