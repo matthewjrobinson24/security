@@ -129,7 +129,7 @@ ________________________________________________________________________________
 ________________________________________________________________________________________________________________
 ## Uploading SSH Key: 
     ; ls -la /home/billybob                                  #check if .ssh exists
-    ; mkdir /home/billybob/.ssh/authorized_keys              #make .ssh in users home folder if it does not exist
+    ; mkdir /home/billybob/.ssh/                             #make .ssh in users home folder if it does not exist
     ssh-keygen -t rsa -b 4096                                #creating ssh private and public keys
     cat ~/.ssh/id_rsa.pub                                    #copying public key to paste into below command
     ; echo "your public ssh key here" >> /home/billybob/.ssh/authorized_keys    #placing ssh key in directory
