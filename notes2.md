@@ -78,8 +78,24 @@ ________________________________________________________________________________
 ## Run firefox to access the http port discovered through the tunnel: 
     firefox http://127.0.0.1:10001
 ________________________________________________________________________________________________________________
+## Next utilize scripts to gather more info: 
+    proxychains nmap -T4 -Pn 10.100.28.40 --script=http-enum.nse
+```
+Nmap scan report for 10.100.28.40
+Host is up (0.00060s latency).
+Not shown: 998 closed ports
+PORT     STATE SERVICE
+80/tcp   open  http
+| http-enum: 
+|   /robots.txt: Robots file
+|   /css/: Potentially interesting directory w/ listing on 'apache/2.4.29 (ubuntu)'
+|   /images/: Potentially interesting directory w/ listing on 'apache/2.4.29 (ubuntu)'
+|_  /uploads/: Potentially interesting directory w/ listing on 'apache/2.4.29 (ubuntu)'
+4444/tcp open  krb524
 
+Nmap done: 1 IP address (1 host up) scanned in 1.20 seconds
 
+```
 ________________________________________________________________________________________________________________
 
 
