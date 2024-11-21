@@ -134,10 +134,9 @@ ________________________________________________________________________________
     cat ~/.ssh/id_rsa.pub                                    #copying public key to paste into below command
     ; echo "your public ssh key here" >> /home/billybob/.ssh/authorized_keys    #placing ssh key in directory
     ; cat /home/billybob/.ssh/authorized_keys                #verifying the ssh key was emplaced
-
 ________________________________________________________________________________________________________________
-
-
+## *Authenticate* in a new pane to the alt ssh port with the user discovered: 
+    ssh -MS /tmp/t1 billybob@127.0.0.1 -p10002
 ________________________________________________________________________________________________________________
 
 
