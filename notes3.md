@@ -1,10 +1,10 @@
     https://sqlbolt.com
 _________________________________________________________________________________________________________________
-
-
+## Post method: In the username and password fields use single quote to create or statement to validate true. 
+    ' or 1='1
 _________________________________________________________________________________________________________________
-
-
+## Get method: In the Inspector (right click) open the network tab use post method and run it, select the post method below and in the new pane select request tab and switch to raw. Copy that and paste to the URL and add a ? at the beginning.
+    http://10.50.33.78/login.php?username='+or+1%3D'1&passwd='+or+1%3D'1
 _________________________________________________________________________________________________________________
 
 
