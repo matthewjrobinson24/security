@@ -27,7 +27,7 @@ sqlinjection	orderlines	  order
 sqlinjection	orders	          id
 sqlinjection	orders	          date
 sqlinjection	orders	          member
-sqlinjection	payments	 id
+sqlinjection	payments	  id
 sqlinjection	payments	    creditcard_number
 sqlinjection	payments	    date
 sqlinjection	payments	    order
