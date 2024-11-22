@@ -20,10 +20,10 @@ sqlinjection	members	          first_name
 sqlinjection	members	          last_name
 sqlinjection	members	          email
 sqlinjection	members	          permission
-sqlinjection	orderlines	      id
-sqlinjection	orderlines	      quantity
-sqlinjection	orderlines	      product
-sqlinjection	orderlines	      order
+sqlinjection	orderlines	  id
+sqlinjection	orderlines	  quantity
+sqlinjection	orderlines	  product
+sqlinjection	orderlines	  order
 sqlinjection	orders	          id
 sqlinjection	orders	          date
 sqlinjection	orders	          member
