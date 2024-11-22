@@ -12,6 +12,17 @@ UNION SELECT table_schema,table_name,column_name FROM information_schema.columns
     
     mysql
     show databases ;
+    use information_schema ;
+    show tables from information_schema ;
+    show columns from columns ;
+
+    SELECT table_schema FROM information_schema.columns ;
+    SELECT table_name FROM information_schema.columns ;
+    SELECT column_name FROM information_schema.columns ;
+
+    SELECT table_schema,table_name,column_name FROM information_schema.columns ;
+
+    
 _________________________________________________________________________________________________________________
 
 
