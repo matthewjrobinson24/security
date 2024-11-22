@@ -10,7 +10,7 @@ ________________________________________________________________________________
 ## Golden Statement: 
 UNION SELECT table_schema,table_name,column_name FROM information_schema.columns
 
------------------------------------[column],[column],[column]----------------------[database],[table]-------------
+-----------------------------------[column],[column],[column]----------------------[database],[table]------------
 
     mysql
     show databases ;
