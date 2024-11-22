@@ -11,24 +11,23 @@ ________________________________________________________________________________
 UNION SELECT table_schema,table_name,column_name FROM information_schema.columns
 
 -----------------------------------[column],[column],[column]----------------------[database],[table]------------
-
+    
     mysql
     show databases ;
     use information_schema ;
     show tables from information_schema ;
     show columns from columns ;
-
+    
     SELECT table_schema FROM information_schema.columns ;
     SELECT table_name FROM information_schema.columns ;
     SELECT column_name FROM information_schema.columns ;
-
+    
     SELECT table_schema,table_name,column_name FROM information_schema.columns ;
     
-
     ##Examples:
+    SELECT x,x,x FROM session.xxx
     SELECT name,cost,year FROM session.car ;
-    SELECT id,name,pass FROM session.user ;
-    SELECT x,x,x FROM session.
+    SELECT id,name,pass FROM session.user ;    
 _________________________________________________________________________________________________________________
 
 
