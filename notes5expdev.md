@@ -36,7 +36,6 @@ ________________________________________________________________________________
     show env
     unset LINES
     unset COLUMNS
-    find /b 0xf7de2000 , 0xf7ffe000 , 0xff , 0xe4
 _____________________________________________________________________________________________________________________
 ### Open gdb against the program func
 #### This is for testing the script continuously as you UPDATE IT.
