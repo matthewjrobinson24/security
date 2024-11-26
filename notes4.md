@@ -9,3 +9,5 @@
 #### Action: Extract approved binaries under directory titled "longTermStorage".
 ____________________________________________________________________________________________________________________
 Just use scp to copy the files through dynamic port forward, onto linops station then scp from remmina on the winops.
+____________________________________________________________________________________________________________________
+# Not on the test.
