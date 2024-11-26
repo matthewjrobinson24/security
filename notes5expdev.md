@@ -3,6 +3,7 @@ ________________________________________________________________________________
 ### Run GDB against the program you want to view
 #### The disass command to see what the code is performing and the memory spaces
     gdb func
+    info proc map
     disass getuserinput                               #This was a function found in the script.
 _____________________________________________________________________________________________________________________
 ### Create a python script to run against the program in gbd.
