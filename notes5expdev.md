@@ -33,8 +33,8 @@ ________________________________________________________________________________
 #### Use the find command to locate the memory thats vulnerable to update your script.
     env - gdb func
     show env
-    unset LINES
-    unset COLUMNS
+    unset env LINES
+    unset env COLUMNS
 _____________________________________________________________________________________________________________________
 ### Open gdb against the program func
 #### This is for testing the script continuously as you UPDATE IT.
