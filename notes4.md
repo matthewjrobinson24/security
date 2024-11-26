@@ -10,4 +10,4 @@
 ____________________________________________________________________________________________________________________
 Just use scp to copy the files through dynamic port forward, onto linops station then scp from remmina on the winops.
 ____________________________________________________________________________________________________________________
-# Not on the test.
+# Not on the test.(only 1 question, I hate programming)
