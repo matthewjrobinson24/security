@@ -5,7 +5,6 @@ ________________________________________________________________________________
     gdb func
     info proc map
     find /b 0xf7de2000 , 0xf7ffe000 , 0xff , 0xe4
-    disass getuserinput                               #This was a function found in the script.
 _____________________________________________________________________________________________________________________
 ### Create a python script to run against the program in gbd.
 #### Buffer to see when the program breaks, EIP to jump to the point in memory, nop sled to push your code into executable space in memory, print to view the output as you update the script. THIS SCRIPT IS FULLY UPDATED!
