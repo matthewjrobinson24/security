@@ -32,17 +32,15 @@ ________________________________________________________________________________
 #### File > attach > select instance > attach > click run/red arrow
 _________________________________________________________________________________________________________________
 ### Use the site to generate 5000 characters
+    https://wiremask.eu/tools/buffer-overflow-pattern-generator/?
 #### Paste in the script replacing the "A" and dropping the * 5000
 _________________________________________________________________________________________________________________
-### 
-#### 
-
-
+### Rewind the immunitydebugger and hit run again
+#### Then rerun the script
 _________________________________________________________________________________________________________________
-### 
-#### 
-
-
+### Next copy the EIP and paste into the register value
+    https://wiremask.eu/tools/buffer-overflow-pattern-generator/?
+#### To find the offset 2003
 _________________________________________________________________________________________________________________
 ### 
 #### 
