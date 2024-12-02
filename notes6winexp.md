@@ -42,15 +42,12 @@ ________________________________________________________________________________
     https://wiremask.eu/tools/buffer-overflow-pattern-generator/?
 #### To find the offset 2003
 _________________________________________________________________________________________________________________
-### 
-#### 
-
-
+### Next update the script by deleting the 5000 generated characters and adding the two lines below
+#### buf += "A" * 2003
+#### buf += "BBBB"
 _________________________________________________________________________________________________________________
-### 
-#### 
-
-
+### Rewind the immunitydebugger and run again
+#### Make sure the script it saved and run it again, should get back 42424242 in the EIP field
 _________________________________________________________________________________________________________________
 ### 
 #### 
