@@ -50,9 +50,8 @@ ________________________________________________________________________________
 #### Make sure the script it saved and run it again, should get back 42424242 in the EIP field
 _________________________________________________________________________________________________________________
 ### Can delete the "BBBB" line, just to ensure it ran properly
-#### 
-
-
+#### Back on the immunitydebugger run the command below in the bottom bar
+    !mona modules
 _________________________________________________________________________________________________________________
 ### 
 #### 
