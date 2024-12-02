@@ -11,7 +11,7 @@ ________________________________________________________________________________
 _________________________________________________________________________________________________________________
 ### Using linux to make script
 #### Script is to create socket to connect to the program we identified
-    vim winbuffer.py
+    vim winbuff.py
 ```
 #!/usr/bin/env python
 
