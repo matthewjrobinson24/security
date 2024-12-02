@@ -28,8 +28,8 @@ print s.recv(1024) ## Print to screen the response
 s.close() ## Close the socket
 ```
 _________________________________________________________________________________________________________________
-### 
-#### 
+### Run immunitydebugger as admin
+#### File > attach > select instance > attach > click run/red arrow
 
 
 _________________________________________________________________________________________________________________
