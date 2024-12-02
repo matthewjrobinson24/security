@@ -1,14 +1,13 @@
     https://z3r0th.medium.com/a-simple-buffer-overflow-using-vulnserver-86b011eb673b
 _________________________________________________________________________________________________________________
-### 
-#### 
-
-
+### Static Analysis
+#### Performing basic analysis
+    strings secureserverind.exe | more
+    file secureserverind.exe
 _________________________________________________________________________________________________________________
-### 
-#### 
-
-
+### Running the program
+#### Checking the ports to see if the port we identified is listening
+    netstat -antot
 _________________________________________________________________________________________________________________
 ### 
 #### 
