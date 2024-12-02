@@ -33,7 +33,7 @@ ________________________________________________________________________________
 _________________________________________________________________________________________________________________
 ### Use the site to generate 5000 characters
     https://wiremask.eu/tools/buffer-overflow-pattern-generator/?
-#### Paste in the script replacing the "A" and dropping the * 5000
+#### Copy and paste in the script replacing the "A" and dropping the * 5000
 _________________________________________________________________________________________________________________
 ### Rewind the immunitydebugger and hit run again
 #### Then rerun the script
