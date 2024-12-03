@@ -83,5 +83,5 @@ ________________________________________________________________________________
 #### Malware: Unknown
 #### Action: Exploit a network service on the machine
 _____________________________________________________________________________________________________________________
-
+## For the shellcode to the ctf: 
 sudo "cat /.secret/.verysecret.pdb"
