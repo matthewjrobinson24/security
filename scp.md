@@ -38,14 +38,14 @@ ________________________________________________________________________________
 ### Action: Perform SSH masquerade and survey system. Identify redirection to the next target.
 
 ## T2
-### Hostname: 
+### Hostname: Intranet
 ### IP: 192.168.150.253
 ### Creds: comrade::StudentMidwayPassword
 ### Last Known SSH Port: 3201
 
 ## T3
-### Hostname: unknown
-### IP: x.x.28.9
+### Hostname: Internal
+### IP: 192.168.28.9
 ### OS: unknown
 ### Creds:comrade::StudentMidwayPassword
 ### Last Known SSH Port: unknown but you can use RDP 
