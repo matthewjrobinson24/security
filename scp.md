@@ -61,19 +61,6 @@ PORT      STATE SERVICE
 139/tcp   open  netbios-ssn
 445/tcp   open  microsoft-ds
 3389/tcp  open  ms-wbt-server
-5040/tcp  open  unknown
-5985/tcp  open  wsman
-5986/tcp  open  wsmans
-47001/tcp open  winrm
-49664/tcp open  unknown
-49665/tcp open  unknown
-49666/tcp open  unknown
-49667/tcp open  unknown
-49668/tcp open  unknown
-49669/tcp open  unknown
-49670/tcp open  unknown
-49671/tcp open  unknown
-
 ```
 
 
