@@ -45,7 +45,7 @@ ________________________________________________________________________________
 
 ## T3
 ### Hostname: unknown
-### IP: x.x.x.9
+### IP: x.x.28.9
 ### OS: unknown
 ### Creds:unknown
 ### Last Known SSH Port: unknown
