@@ -20,3 +20,29 @@ ________________________________________________________________________________
 
     scp -P 12345 student@127.0.0.1:C:/users/student/desktop/script.sh .            ##Windows
 _________________________________________________________________________________________________________________
+# Scheme of Maneuver:
+## >Jump Box
+## ->T1: 192.168.28.100
+## -->T3:x.x.x.9
+
+## Target Section:
+
+## T1
+### Hostname: Donovian_Extranet
+### IP: 192.168.28.100
+### OS: CentOS
+### Creds:Unknown
+### Last Known SSH Port: 2222
+### PSP: none
+### Malware: none
+### Action: Perform SSH masquerade and survey system. Identify redirection to the next target.
+
+## T3
+### Hostname: unknown
+### IP: x.x.x.9
+### OS: unknown
+### Creds:unknown
+### Last Known SSH Port: unknown
+### PSP: Unknown
+### Malware: Unknown
+### Action: Gain access; survey host and map Donovian internal Cyberspace.
