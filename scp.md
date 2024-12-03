@@ -37,6 +37,12 @@ ________________________________________________________________________________
 ### Malware: none
 ### Action: Perform SSH masquerade and survey system. Identify redirection to the next target.
 
+## T2
+### Hostname: 
+### IP: 192.168.150.253
+### Creds: comrade::StudentMidwayPassword
+### Last Known SSH Port: 3201
+
 ## T3
 ### Hostname: unknown
 ### IP: x.x.x.9
