@@ -52,3 +52,29 @@ ________________________________________________________________________________
 ### PSP: Unknown
 ### Malware: Unknown
 ### Action: Gain access; survey host and map Donovian internal Cyberspace.
+```
+Nmap scan report for 192.168.28.9
+Host is up (0.00099s latency).
+Not shown: 65519 closed ports
+PORT      STATE SERVICE
+135/tcp   open  msrpc
+139/tcp   open  netbios-ssn
+445/tcp   open  microsoft-ds
+3389/tcp  open  ms-wbt-server
+5040/tcp  open  unknown
+5985/tcp  open  wsman
+5986/tcp  open  wsmans
+47001/tcp open  winrm
+49664/tcp open  unknown
+49665/tcp open  unknown
+49666/tcp open  unknown
+49667/tcp open  unknown
+49668/tcp open  unknown
+49669/tcp open  unknown
+49670/tcp open  unknown
+49671/tcp open  unknown
+
+```
+
+
+
