@@ -10,7 +10,7 @@ ________________________________________________________________________________
 ## Port Forward:
     ssh -S /tmp/jump jump -O forward -L12345:1.2.3.4:22
 _________________________________________________________________________________________________________________
-## SCP Local "file.sh" to remote host: 
+## SCP local "file.sh" TO remote host: 
     scp -P 12345 file.sh student@127.0.0.1:/home/student2/documents                ##Linux
 
     scp -P 12345 file.sh student@127.0.0.1:C:/users/student/desktop                ##Windows
