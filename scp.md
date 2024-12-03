@@ -47,8 +47,9 @@ ________________________________________________________________________________
 ### Hostname: unknown
 ### IP: x.x.28.9
 ### OS: unknown
-### Creds:unknown
-### Last Known SSH Port: unknown
+### Creds:comrade::StudentMidwayPassword
+### Last Known SSH Port: unknown but you can use RDP 
+    xfreerdp /v:192.168.28.9 /u:comrade /p:StudentMidwayPassword /size:1920x1000 +clipboard
 ### PSP: Unknown
 ### Malware: Unknown
 ### Action: Gain access; survey host and map Donovian internal Cyberspace.
