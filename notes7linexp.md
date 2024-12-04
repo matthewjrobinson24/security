@@ -11,6 +11,7 @@ ________________________________________________________________________________
 ## 
 ### papa john
     john --wordlist=/home/student/billybob/10-million-password-list-top-10000.txt crackthese.txt
+su zeus    ghjcnbnenrf
 __________________________________________________________________________________________________________________
 ## 
 ### disgusting gnu nano (select the vim option)
