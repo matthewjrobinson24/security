@@ -15,7 +15,10 @@ ________________________________________________________________________________
 ## ->Pivot: 192.168.28.105
 ## -->T1: 192.168.28.5
 
-## Target Section:
+    ssh -MS /tmp/jump student@10.50.25.229
+    ssh -S /tmp/jump jump -O forward -L20005:192.168.28.105:2222
+    ssh -S /tmp/t1 t1 -O forward -L20006:192.168.28.5:3389
+    xfreerdp /v:127.0.0.1:20006 /u:comrade /p:StudentPrivPassword /size:1920x1000 +clipboard
 
 ## Pivot
 ### Hostname: ftp.site.donovia
@@ -29,7 +32,6 @@ ________________________________________________________________________________
 ### T1
 ### Hostname: donovian-windows-private
 ### IP: 192.168.28.5
-    xfreerdp /v:127.0.0.1:20006 /u:comrade /p:StudentPrivPassword /size:1920x1000 +clipboard
 ### OS: Windows ver: Unknown
 ### Creds: comrade :: StudentPrivPassword
 ### Last Known Ports: 3389
