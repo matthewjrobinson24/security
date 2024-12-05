@@ -29,7 +29,7 @@ ________________________________________________________________________________
 ### T1
 ### Hostname: donovian-windows-private
 ### IP: 192.168.28.5
-    xfreerdp /v:192.168.28.5 /u:comrade /p:StudentPrivPassword /size:1920x1000 +clipboard
+    xfreerdp /v:127.0.0.1:20006 /u:comrade /p:StudentPrivPassword /size:1920x1000 +clipboard
 ### OS: Windows ver: Unknown
 ### Creds: comrade :: StudentPrivPassword
 ### Last Known Ports: 3389
