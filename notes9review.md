@@ -239,7 +239,7 @@ ________________________________________________________________________________
 #### All public facing systems of target entitiy excluding devices responsible for networking (routers, switches, etc). Known web address will be supplied out of band.
 
 #### Internal network of target entity excluding devices responsible for networking (routers, switches, etc)
-
+__________________________________________________________________________________________________________________
 ## RoE:
 
 #### Google docs, and all other shareable document platforms, are forbidden during this operation.
@@ -262,6 +262,9 @@ ________________________________________________________________________________
 
 #### Prior Approvals: OSINT through publicly available resources. Scrape appropriate web content that will provide operational data. Testing of found credentials. NOT approved to change routing or destroy data.
 __________________________________________________________________________________________________________________
+# |
+# |
+__________________________________________________________________________________________________________________
 ## CCTC Security
 ### OPERATION Dry Run
 
@@ -282,18 +285,14 @@ ________________________________________________________________________________
     2. Discover additional targets through analysis of information from post-exploitation tasks.
 ### Pivot to Found Targets
     1. Pivot through network to other targets as you find them.
-NOTES
-    • 
-
+__________________________________________________________________________________________________________________
 ## BestWebApp
 ### Perform Reconnaissance
     1. Find all information about, and contained within, the target system to include potential phishing targets, website directory structure, and hidden pages.
     2. Actively scan and interact with target to find potential attack vectors. 
 ### Attempt Exploitation
     1. Attempt to retrieve privileged information from the target by using information found in reconnaissance. Reconnaissance from other targets within the network may have information relevant to any target.
-NOTES
-    • 
-
+__________________________________________________________________________________________________________________
 ## RoundSensor
 ### Perform Reconnaissance
     1. Actively scan and interact with target to find potential attack vectors.
@@ -304,9 +303,7 @@ NOTES
     2. Discover additional targets through analysis of information from post-exploitation tasks.
 ### Pivot to Found Targets
     1. Pivot through network to other targets as you find them.
-NOTES
-    • 
-
+__________________________________________________________________________________________________________________
 ## Windows-Workstation
 ### Perform Reconnaissance
     1. Actively scan and interact with target to find potential attack vectors.
@@ -317,5 +314,4 @@ NOTES
     2. Discover additional targets through analysis of information from post-exploitation tasks.
 ### Pivot to Found Targets
     1. Pivot through network to other targets as you find them.
-NOTES
-    • 
+__________________________________________________________________________________________________________________
