@@ -169,7 +169,7 @@ ________________________________________________________________________________
 ```
 ______________________________________________________________________________________________________________
 ## Scan the new device NOT THE ROUTER .190
-### Hating my life right now
+### Hating my life right now, nc to validate the ports/test them
     proxychains nmap -T4 -Pn 192.168.28.172 -p-
 ```
 Nmap scan report for 192.168.28.172
@@ -180,6 +180,14 @@ PORT     STATE SERVICE
 7008/tcp open  afs3-update
 
 Nmap done: 1 IP address (1 host up) scanned in 35.59 seconds
+```
+    proxychains nc 192.168.28.172 22
+```
+SSH-2.0-OpenSSH_7.6p1 Ubuntu-4ubuntu0.3
+```
+    proxychains nc 192.168.28.172 7008
+```
+not http or ssh, can opensource to see what its used for (server-to-server updater)
 ```
 ______________________________________________________________________________________________________________
 ## 
