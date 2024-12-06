@@ -149,7 +149,7 @@ ________________________________________________________________________________
 
 #### You will not destroy data/systems, perform DoS, or otherwise disrupt business operations of any entity during this penetration test.
 
-You will not use Metasploit tools for any affect with the exception of shellcode generation.
+#### You will not use Metasploit tools for any affect with the exception of shellcode generation.
 
 #### You will not target routers, switches or other networking devices.
 
