@@ -168,9 +168,19 @@ ________________________________________________________________________________
 64 bytes from 192.168.28.190: icmp_seq=1 ttl=64 time=0.122 ms
 ```
 ______________________________________________________________________________________________________________
-## 
-### 
+## Scan the new device NOT THE ROUTER .190
+### Hating my life right now
+    proxychains nmap -T4 -Pn 192.168.28.172 -p-
+```
+Nmap scan report for 192.168.28.172
+Host is up (0.00055s latency).
+Not shown: 65533 closed ports
+PORT     STATE SERVICE
+22/tcp   open  ssh
+7008/tcp open  afs3-update
 
+Nmap done: 1 IP address (1 host up) scanned in 35.59 seconds
+```
 ______________________________________________________________________________________________________________
 ## 
 ### 
