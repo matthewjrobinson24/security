@@ -1,7 +1,7 @@
     10.50.23.155 22/80
 ______________________________________________________________________________________________________________
-## First Scan the ip
-### Second nc the ports to validate them
+## First nmap the ip (notice http is running use enum script for more pages)
+### Second nc the ports to validate them (obviously nc before the enum script to ensure its http)
     sudo nmap -T4 -Pn 10.50.23.155
 ```
 PORT   STATE SERVICE
