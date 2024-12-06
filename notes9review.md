@@ -1,8 +1,24 @@
-    10.50.23.155
+    10.50.23.155 22/80
 ______________________________________________________________________________________________________________
-## 
-### 
-
+## First Scan the ip
+### Second nc the ports to validate them
+    sudo nmap -T4 -Pn 10.50.23.155
+```
+PORT   STATE SERVICE
+22/tcp open  ssh
+80/tcp open  http
+```
+    sudo nmap -T4 -Pn 10.50.23.155 --script=http-enum.nse
+```
+PORT   STATE SERVICE
+22/tcp open  ssh
+80/tcp open  http
+| http-enum: 
+|   /login.php: Possible admin folder
+|   /login.html: Possible admin folder
+|   /img/: Potentially interesting directory w/ listing on 'apache/2.4.29 (ubuntu)'
+|_  /scripts/: Potentially interesting directory w/ listing on 'apache/2.4.29 (ubuntu)'
+```
 ______________________________________________________________________________________________________________
 ## 
 ### 
