@@ -162,6 +162,11 @@ ________________________________________________________________________________
 ## NONE OF THE SSH WORKS
 ### So take your happy ass back to the first box and scan that network ^^
     for i in {1..254}; do (ping -c 1 192.168.28.$i | grep "bytes from" &); done
+```
+64 bytes from 192.168.28.172: icmp_seq=1 ttl=63 time=1.39 ms
+64 bytes from 192.168.28.181: icmp_seq=1 ttl=63 time=0.737 ms
+64 bytes from 192.168.28.190: icmp_seq=1 ttl=64 time=0.122 ms
+```
 ______________________________________________________________________________________________________________
 ## 
 ### 
