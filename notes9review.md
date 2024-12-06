@@ -240,7 +240,7 @@ ________________________________________________________________________________
 ______________________________________________________________________________________________________________
 ## This is the rdp Connect command found on the VTA website
 ### Under Resources/Lesson Resources just edit the ip/creds to redirect to tunnel
-    xfreerdp /v:127.0.0.1:20005 /u:Aaron /p:apasswordyPa$$word /size:1920x1000 +clipboard
+    xfreerdp /v:127.0.0.1:20005 /u:Lroth /p:anotherpassword4THEages /size:1920x1000 +clipboard
 ______________________________________________________________________________________________________________
 ## 
 ### 
