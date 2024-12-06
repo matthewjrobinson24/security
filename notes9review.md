@@ -235,7 +235,7 @@ rdp
 ______________________________________________________________________________________________________________
 ## Set up tunnel to next device
 ### Set up to ssh/22 and rdp/3389
-    
+    ssh -S /tmp/t1 t1 -O forward -L20004:192.168.28.179:22 -L20005:192.168.28.179:3389
 ______________________________________________________________________________________________________________
 ## This is the rdp Connect command found on the VTA website
 ### Under Resources/Lesson Resources just edit the ip/creds to redirect to tunnel
