@@ -158,28 +158,3 @@ ________________________________________________________________________________
 #### You will not interfere with other entities' operations in any way.
 
 #### Prior Approvals: OSINT through publicly available resources. Scrape appropriate web content that will provide operational data. Testing of found credentials. NOT approved to change routing or destroy data.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
