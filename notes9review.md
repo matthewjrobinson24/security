@@ -154,14 +154,10 @@ All possible combo's the last one is the most promising ;)
 ______________________________________________________________________________________________________________
 ## From the last golden statement we tried we got usernames and possible passwords
 ### Placing them below to test which ones work
-    Aaron
-    user2
-    user3
-    Lroth
-    ncnffjbeqlCn$$jbeq
-    RntyrfVfNER78
-    Obo4GURRnccyrf
-    anotherpassword4THEages
+    Aaron    ncnffjbeqlCn$$jbeq
+    user2    RntyrfVfNER78
+    user3    Obo4GURRnccyrf
+    Lroth    anotherpassword4THEages
 ______________________________________________________________________________________________________________
 ## 
 ### 
