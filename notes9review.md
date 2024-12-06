@@ -19,6 +19,30 @@ PORT   STATE SERVICE
 |   /img/: Potentially interesting directory w/ listing on 'apache/2.4.29 (ubuntu)'
 |_  /scripts/: Potentially interesting directory w/ listing on 'apache/2.4.29 (ubuntu)'
 ```
+    nc 10.50.23.155 22
+```
+SSH-2.0-OpenSSH_7.6p1 Ubuntu-4ubuntu0.3
+```
+    nc 10.50.23.155 80
+```
+HTTP/1.1 400 Bad Request
+Date: Fri, 06 Dec 2024 15:29:29 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Content-Length: 303
+Connection: close
+Content-Type: text/html; charset=iso-8859-1
+
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>400 Bad Request</title>
+</head><body>
+<h1>Bad Request</h1>
+<p>Your browser sent a request that this server could not understand.<br />
+</p>
+<hr>
+<address>Apache/2.4.29 (Ubuntu) Server at 10.10.28.20 Port 80</address>
+</body></html>
+```
 ______________________________________________________________________________________________________________
 ## 
 ### 
