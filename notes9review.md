@@ -58,6 +58,8 @@ ________________________________________________________________________________
 ______________________________________________________________________________________________________________
 ## SSH to the ip using the creds found
 ### Run /bin/bash to upgrade shell, do ip a/ip n/ip r to see what to ping sweep
+    ssh -MS /tmp/jump user2@10.50.23.155
+    
     for i in {1..30}; do (ping -c 1 10.10.28.$i | grep "bytes from" &); done
 ```
 64 bytes from 10.10.28.4: icmp_seq=1 ttl=64 time=2.43 ms
@@ -65,17 +67,52 @@ ________________________________________________________________________________
 64 bytes from 10.10.28.30: icmp_seq=1 ttl=64 time=0.441 ms
 ```
 ______________________________________________________________________________________________________________
-## 2 files to check
-### 
-
+## Check known files on the system
+### To see if there are any other networks we can scan
+    cat /etc/passwd
+    cat /etc/hosts
 ______________________________________________________________________________________________________________
-## 
-### 
-
+## After finding the new network
+### Set up dynamic port forward to start scanning
+    ssh -S /tmp/jump jump -O forward -D9050
 ______________________________________________________________________________________________________________
-## 
-### 
+## Scan the 192.168.28.181 discovered
+### Followed by nc to validate ports
+    proxychains nmap -T4 -Pn 192.168.28.181 -p-
+```
+Nmap scan report for 192.168.28.181
+Host is up (0.00055s latency).
+Not shown: 65533 closed ports
+PORT   STATE SERVICE
+22/tcp open  ssh
+80/tcp open  http
 
+Nmap done: 1 IP address (1 host up) scanned in 36.44 seconds
+```
+    proxychains nc 192.168.28.181 22
+```
+SSH-2.0-OpenSSH_7.6p1 Ubuntu-4ubuntu0.3
+```
+    proxychains nc 192.168.28.181 80
+```
+HTTP/1.1 400 Bad Request
+Date: Fri, 06 Dec 2024 18:13:17 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Content-Length: 306
+Connection: close
+Content-Type: text/html; charset=iso-8859-1
+
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>400 Bad Request</title>
+</head><body>
+<h1>Bad Request</h1>
+<p>Your browser sent a request that this server could not understand.<br />
+</p>
+<hr>
+<address>Apache/2.4.29 (Ubuntu) Server at 192.168.28.181 Port 80</address>
+</body></html>
+```
 ______________________________________________________________________________________________________________
 ## 
 ### 
