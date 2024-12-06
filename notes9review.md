@@ -44,9 +44,12 @@ Content-Type: text/html; charset=iso-8859-1
 </body></html>
 ```
 ______________________________________________________________________________________________________________
-## 
-### 
-
+## After scanning run firefox and enter ip in url
+### From the results of the enum scan add the file paths to the end of the ip
+    10.50.23.155/login.php
+    10.50.23.155/login.html
+    10.50.23.155/img/
+    10.50.23.155/scripts/
 ______________________________________________________________________________________________________________
 ## 
 ### 
