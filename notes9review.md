@@ -190,9 +190,9 @@ SSH-2.0-OpenSSH_7.6p1 Ubuntu-4ubuntu0.3
 not http or ssh, can opensource to see what its used for (server-to-server updater)
 ```
 ______________________________________________________________________________________________________________
-## 
-### 
-
+## Now can make a tunnel to the .172 on port 22
+### Use the passwords found before but converted from ROT13
+    ssh -S /tmp/jump jump -O forward -L20003:192.168.28.172:22
 ______________________________________________________________________________________________________________
 ## 
 ### 
