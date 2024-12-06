@@ -160,7 +160,7 @@ ________________________________________________________________________________
     Lroth    anotherpassword4THEages
 ______________________________________________________________________________________________________________
 ## NONE OF THE SSH ABOVE WORKS
-### So take your happy ass back to the first box and scan that network ^^
+### So take your happy ass back to the first box and scan that network ;)
     for i in {1..254}; do (ping -c 1 192.168.28.$i | grep "bytes from" &); done
 ```
 64 bytes from 192.168.28.172: icmp_seq=1 ttl=63 time=1.39 ms
