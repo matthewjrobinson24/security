@@ -242,6 +242,9 @@ ________________________________________________________________________________
 ### Under Resources/Lesson Resources just edit the ip/creds to redirect to tunnel
     xfreerdp /v:127.0.0.1:20005 /u:Lroth /p:anotherpassword4THEages /size:1920x1000 +clipboard
 ______________________________________________________________________________________________________________
+# |
+# |
+______________________________________________________________________________________________________________
 # OPERATION: DRY RUN
 
 ## SITREP: This is a dry run operation to prepare you for tomorrow's real operation. You will be provided with a mission task sheet, RoE, and scope.
