@@ -194,17 +194,44 @@ ________________________________________________________________________________
 ### Use the passwords found before but converted from ROT13
     ssh -S /tmp/jump jump -O forward -L20003:192.168.28.172:22
 ______________________________________________________________________________________________________________
-## 
-### 
+## Ping Sweep
+### On the new device
+    for i in {1..254}; do (ping -c 1 192.168.28.$i | grep "bytes from" &); done
+______________________________________________________________________________________________________________
+## Cancel and reroute dynamic port forward
+### route to the .172
+    ssh -S /tmp/jump jump -O cancel -D9050
+    ssh -S /tmp/t1 t1 -O forward -D9050
 
 ______________________________________________________________________________________________________________
-## 
-### 
+## Nmap scan
+### nc the ports below
+    proxychains nmap -T4 -Pn 192.168.28.179 -p-
+```
+Nmap scan report for 192.168.28.179
+Host is up (0.00074s latency).
+Not shown: 65516 closed ports
+PORT      STATE SERVICE
+22/tcp    open  ssh
+135/tcp   open  msrpc
+139/tcp   open  netbios-ssn
+445/tcp   open  microsoft-ds
+3389/tcp  open  ms-wbt-server
+```
+    proxychains nc 192.168.28.179 22
+SSH-2.0-OpenSSH_for_Windows_7.7
 
-______________________________________________________________________________________________________________
-## 
-### 
+    proxychains nc 192.168.28.179 135
+netbios
 
+    proxychains nc 192.168.28.179 139
+netbios
+
+    proxychains nc 192.168.28.179 445
+smb
+
+    proxychains nc 192.168.28.179 3389
+rdp
 ______________________________________________________________________________________________________________
 ## 
 ### 
