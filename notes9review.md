@@ -233,13 +233,13 @@ smb
     proxychains nc 192.168.28.179 3389
 rdp
 ______________________________________________________________________________________________________________
-## 
-### 
-
+## Set up tunnel to next device
+### Set up to ssh/22 and rdp/3389
+    
 ______________________________________________________________________________________________________________
-## 
-### 
-
+## This is the rdp Connect command found on the VTA website
+### Under Resources/Lesson Resources just edit the ip/creds to redirect to tunnel
+    xfreerdp /v:127.0.0.1:20005 /u:Aaron /p:apasswordyPa$$word /size:1920x1000 +clipboard
 ______________________________________________________________________________________________________________
 ## 
 ### 
