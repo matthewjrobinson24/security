@@ -57,15 +57,8 @@ ________________________________________________________________________________
     user_password=EaglesIsARE78
 ______________________________________________________________________________________________________________
 ## SSH to the ip using the creds found
-### Run /bin/bash to upgrade shell, do ip a/ip n/ip r to see what to ping sweep
+### Run bash to upgrade shell
     ssh -MS /tmp/jump user2@10.50.23.155
-    
-    for i in {1..30}; do (ping -c 1 10.10.28.$i | grep "bytes from" &); done
-```
-64 bytes from 10.10.28.4: icmp_seq=1 ttl=64 time=2.43 ms
-64 bytes from 10.10.28.20: icmp_seq=1 ttl=64 time=0.018 ms
-64 bytes from 10.10.28.30: icmp_seq=1 ttl=64 time=0.441 ms
-```
 ______________________________________________________________________________________________________________
 ## Check known files on the system
 ### To see if there are any other networks we can scan
