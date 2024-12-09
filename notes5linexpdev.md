@@ -3,6 +3,7 @@ ________________________________________________________________________________
 ### Run GDB against the program you want to view
 #### To see if it can be broken.
     gdb func
+    disass func
 _____________________________________________________________________________________________________________________
 ### Create a python script to run against the program in gbd.
 #### Buffer to see when the program breaks, EIP to jump to the point in memory, nop sled to push your code into executable space in memory, print to view the output as you update the script. THIS SCRIPT IS FULLY UPDATED!
