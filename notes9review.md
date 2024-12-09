@@ -203,20 +203,6 @@ PORT      STATE SERVICE
 445/tcp   open  microsoft-ds
 3389/tcp  open  ms-wbt-server
 ```
-    proxychains nc 192.168.28.179 22
-SSH-2.0-OpenSSH_for_Windows_7.7
-
-    proxychains nc 192.168.28.179 135
-netbios
-
-    proxychains nc 192.168.28.179 139
-netbios
-
-    proxychains nc 192.168.28.179 445
-smb
-
-    proxychains nc 192.168.28.179 3389
-rdp
 ______________________________________________________________________________________________________________
 ## Set up tunnel to next device
 ### Set up to ssh/22 and rdp/3389
