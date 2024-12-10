@@ -85,6 +85,7 @@ Host is up (0.00046s latency).
 Not shown: 999 closed ports
 PORT   STATE SERVICE
 22/tcp open  ssh
+21254/tcp open  unknown
 
 Nmap scan report for 192.168.28.182
 Host is up (0.00045s latency).
