@@ -19,7 +19,7 @@ ________________________________________________________________________________
 ### Username: MARO-007-M
 ### IP: 10.50.25.244
 ____________________________________________________________________________________________________________________
-Nmap scan report for 10.50.25.244
+Nmap scan report for 10.50.25.244 ----> MINISTRY-DEFENSE
 Host is up (0.0069s latency).
 Not shown: 998 filtered ports
 PORT   STATE SERVICE
@@ -80,7 +80,7 @@ ________________________________________________________________________________
 64 bytes from 192.168.28.182: icmp_seq=1 ttl=63 time=1.64 ms
 64 bytes from 192.168.28.190: icmp_seq=1 ttl=64 time=0.063 ms
 ___________________________________________________________________________________________________________________
-Nmap scan report for 192.168.28.177
+Nmap scan report for 192.168.28.177 -----> DEFENSE_NIX1
 Host is up (0.00046s latency).
 Not shown: 999 closed ports
 PORT   STATE SERVICE
