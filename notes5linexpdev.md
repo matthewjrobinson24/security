@@ -25,7 +25,7 @@ ________________________________________________________________________________
 _____________________________________________________________________________________________________________________
 ### Open the gdb enviroment to unset the memory.
 #### Use the find command to locate the memory thats vulnerable to update your script.
-    disass func                #if there more functions within the function
+    disass main                #if there more functions within the function
     env - gdb func
     unset env LINES
     unset env COLUMNS
