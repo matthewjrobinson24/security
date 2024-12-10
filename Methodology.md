@@ -44,7 +44,7 @@ mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
 news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
 uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
 proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
-www-data:x:33:33:usMiHwCWTW75U4QMb5O0:/var/www:/bin/sh
+www-data:x:33:33:usMiHwCWTW75U4QMb5O0:10/bin/sh
 backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
 list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
 irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
@@ -75,7 +75,10 @@ ________________________________________________________________________________
 192.168.28.160/27
 FFcy67MnQaE33rt8JNm1
 ___________________________________________________________________________________________________________________
-
+64 bytes from 192.168.28.30: icmp_seq=1 ttl=64 time=0.258 ms
+64 bytes from 192.168.28.177: icmp_seq=1 ttl=63 time=1.36 ms
+64 bytes from 192.168.28.182: icmp_seq=1 ttl=63 time=1.64 ms
+64 bytes from 192.168.28.190: icmp_seq=1 ttl=64 time=0.063 ms
 ___________________________________________________________________________________________________________________
 
 ___________________________________________________________________________________________________________________
