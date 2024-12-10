@@ -100,7 +100,21 @@ PORT   STATE SERVICE
 
 Nmap done: 2 IP addresses (2 hosts up) scanned in 1.43 seconds
 ___________________________________________________________________________________________________________________
-
+Array
+    [0] => Msmith
+    [name] => Msmith
+    [1] => Squanchy
+    [password] => Squanchy
+1Array
+    [0] => Fpalic
+    [name] => Fpalic
+    [1] => Birdperson
+    [password] => Birdperson
+1Array
+    [0] => Kmichae
+    [name] => Kmichae
+    [1] => MrMeeseeks
+    [password] => MrMeeseeks
 ___________________________________________________________________________________________________________________
 
 ___________________________________________________________________________________________________________________
