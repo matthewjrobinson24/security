@@ -1,4 +1,4 @@
-## 1: Recon/Ping Sweep/Scan Scripts/Validate Ports
+## 1: Recon/Ping Sweep/Scan HTTP Scripts/Validate Ports
 
 ____________________________________________________________________________________________________________________
 ## 2: Check HTTP site/SQL methods/Post and Get/Authentication bypass
@@ -229,9 +229,35 @@ netmap.png
 
 10.50.25.244
 ___________________________________________________________________________________________________________________
-
+    64 bytes from 192.168.28.5: icmp_seq=1 ttl=127 time=6.28 ms
+    64 bytes from 192.168.28.10: icmp_seq=1 ttl=63 time=0.816 ms
+    64 bytes from 192.168.28.19: icmp_seq=1 ttl=63 time=1.33 ms
+    64 bytes from 192.168.28.30: icmp_seq=1 ttl=64 time=0.178 ms
 ___________________________________________________________________________________________________________________
-
+    Nmap scan report for 192.168.28.5
+    Host is up (0.00057s latency).
+    Not shown: 994 closed ports
+    PORT     STATE SERVICE
+    22/tcp   open  ssh
+    135/tcp  open  msrpc
+    139/tcp  open  netbios-ssn
+    445/tcp  open  microsoft-ds
+    3389/tcp open  ms-wbt-server
+    9999/tcp open  abyss
+    
+    Nmap scan report for 192.168.28.10
+    Host is up (0.00055s latency).
+    Not shown: 999 closed ports
+    PORT   STATE SERVICE
+    22/tcp open  ssh
+    
+    Nmap scan report for 192.168.28.19
+    Host is up (0.00057s latency).
+    Not shown: 999 closed ports
+    PORT   STATE SERVICE
+    22/tcp open  ssh
+    
+    Nmap done: 3 IP addresses (3 hosts up) scanned in 1.88 seconds
 ___________________________________________________________________________________________________________________
 
 ___________________________________________________________________________________________________________________
