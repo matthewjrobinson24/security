@@ -80,7 +80,24 @@ ________________________________________________________________________________
 64 bytes from 192.168.28.182: icmp_seq=1 ttl=63 time=1.64 ms
 64 bytes from 192.168.28.190: icmp_seq=1 ttl=64 time=0.063 ms
 ___________________________________________________________________________________________________________________
+Nmap scan report for 192.168.28.177
+Host is up (0.00046s latency).
+Not shown: 999 closed ports
+PORT   STATE SERVICE
+22/tcp open  ssh
 
+Nmap scan report for 192.168.28.182
+Host is up (0.00045s latency).
+Not shown: 998 closed ports
+PORT   STATE SERVICE
+22/tcp open  ssh
+80/tcp open  http
+| http-enum: 
+|   /login/: Login page
+|   /robots.txt: Robots file
+|_  /images/: Potentially interesting directory w/ listing on 'apache/2.4.29 (ubuntu)'
+
+Nmap done: 2 IP addresses (2 hosts up) scanned in 1.43 seconds
 ___________________________________________________________________________________________________________________
 
 ___________________________________________________________________________________________________________________
