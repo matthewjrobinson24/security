@@ -212,7 +212,7 @@ ________________________________________________________________________________
     ubuntu:x:1000:1000:Ubuntu:/home/ubuntu:/bin/bash
     Fpalic:x:1001:1001::/home/Fpalic:/bin/sh
 ___________________________________________________________________________________________________________________
-Ministry_Defense website credentials are openupthedoor :: B12c3b34f
+Ministry_Defense website credentials are openupthedoor :: B12c3b34f ------> 10.50.25.244
 
 Part2 AOR will be conducted on the 192.168.28.0/27 net.
 
@@ -226,8 +226,6 @@ moveup.exe
 credentialDump.csv
 
 netmap.png 
-
-10.50.25.244
 ___________________________________________________________________________________________________________________
     64 bytes from 192.168.28.5: icmp_seq=1 ttl=127 time=6.28 ms
     64 bytes from 192.168.28.10: icmp_seq=1 ttl=63 time=0.816 ms
