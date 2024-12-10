@@ -226,6 +226,12 @@ moveup.exe
 credentialDump.csv
 
 netmap.png 
+
+Username	Password
+Rsanch	    ScaryTerry
+Msmith	    Squanchy
+Fpalic	    Birdperson
+Kmichae	    MrMeeseeks
 ___________________________________________________________________________________________________________________
     64 bytes from 192.168.28.5: icmp_seq=1 ttl=127 time=6.28 ms
     64 bytes from 192.168.28.10: icmp_seq=1 ttl=63 time=0.816 ms
